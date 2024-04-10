@@ -34,10 +34,10 @@
 					<option value="{{ period }}">{{ period }}</option>
 				{% endfor %}
 			</select>
-        <div for="possessed">
-        <label class="label_possessed">Possess:</label>
-        <input type="checkbox" id="possessed" name="possessed" {% if request.get('possessed') == 'on' %}checked{% endif %}>
-        </div>
+			<div for="possessed">
+				<label class="label_possessed">Possess:</label>
+				<input type="checkbox" id="possessed" name="possessed" {% if request.get('possessed') == 'on' %} checked {% endif %}>
+			</div>
 		</form>
 
 

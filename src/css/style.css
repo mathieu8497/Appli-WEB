@@ -1,48 +1,47 @@
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #f0f0f0;
-    background-image: url('../image1.jpeg');
-    background-size: cover; /* Couvrir tout l'espace disponible */
-    background-position: center; /* Centrer l'image */
-    background-repeat: no-repeat; /* Ne pas répéter l'image */
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f0f0f0;
+  background-image: url("../image1.jpeg");
+  background-size: cover; /* Couvrir tout l'espace disponible */
+  background-position: center; /* Centrer l'image */
+  background-repeat: no-repeat; /* Ne pas répéter l'image */
 }
 
 h1 {
-    color: #ffffff;
-    background-color: black;
-    padding: 10px;
-    margin-top: 5px;
-    display: inline-block;
-    text-decoration: none;
-    
+  color: #ffffff;
+  background-color: black;
+  padding: 10px;
+  margin-top: 5px;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .plante {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .plante h2 {
-    color: #666;
+  color: #666;
 }
 
 .bouton {
-    padding: 10px;
-    margin-top: 5px;
-    display: inline-block;
-    background-color: #008cba;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
+  padding: 10px;
+  margin-top: 5px;
+  display: inline-block;
+  background-color: #008cba;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .bouton:hover {
-    background-color: #005f6b;
+  background-color: #005f6b;
 }
 .menu {
-    display: inline-grid;
-    justify-content: space-between;
+  display: inline-grid;
+  justify-content: space-between;
 }
