@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Flowerpedia</title>
+		<link rel="stylesheet" href="../css/style_fleur.css"/>
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="menu">
+			<h1>Flowerpedia</h1>
+			<a href="../php/index.php">
+				<h2 class="bouton">Greenhouse Control</h2>
+			</a>
+		</div>
+		<form action="" method="GET" id="searchForm">
+			<input
+			type="text" id="searchInput" name="search" placeholder="Search by name or family..." aria-label="Search by name or family">
+
+			<!-- Plant Type Filter in Twig -->
+			<select name="plant_type">
+				<option value="">All Types</option>
+				{% for type in plant_types %}
+					<option value="{{ type }}">{{ type|capitalize }}</option>
+				{% endfor %}
+			</select>
+
+
+			<!-- Blooming Period Filter -->
+			<select name="blooming_period">
+				<option value="">All Blooming Periods</option>
+				{% for period in blooming_periods %}
+					<option value="{{ period }}">{{ period }}</option>
+				{% endfor %}
+			</select>
+        <div for="possessed">
+        <label class="label_possessed">Possess:</label>
+        <input type="checkbox" id="possessed" name="possessed" {% if request.get('possessed') == 'on' %}checked{% endif %}>
+        </div>
+		</form>
+
+
+		<div class="pro_container">
+			{% for flower in data %}
+				{% set imageFilename = flower.common_name|replace({' ': '_', '\'': '', '.': '', ',': '', '(': '', ')': '', '&': 'and'})|lower %}
+        {% set imagePath = '../images/' ~ imageFilename ~ '.jpg' %}
+        <div class="box_products" style="background-image: url('{{ imagePath }}'); background-size: cover; background-position: center;">
+            <div class="visible_info">
+                <h5>{{ flower.common_name|e }}</h5>
+            </div>
+            <div class="hidden_info des">
+                - Family: <span>{{ flower.family|e }}</span><br>
+                - Type: <span>{{ flower.plant_type|e }}</span><br>
+                - Flowering period: <span>{{ flower.blooming_period|e }}</span><br>
+                - Colors: <span>{{ flower.colors|e }}</span><br>
+                - Pollinators: <span>{{ flower.pollinators|e }}</span>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+    <button id="back_top" title="Go to top"><img src="../backtop.svg" alt="go to top"></button><!--BOUTON VERS LE HAUT-->
+
+    <script src="../javascript/script_flowerpedia.js"></script>
+</body>
+</html>
