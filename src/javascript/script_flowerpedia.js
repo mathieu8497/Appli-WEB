@@ -40,11 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
                         <h5>${flower.common_name}</h5>
                     </div>
                     <div class="hidden_info des">
-                        - Famille: <span>${flower.family}</span><br>
+                        - Family: <span>${flower.family}</span><br>
                         - Type: <span>${flower.plant_type}</span><br>
-                        - Période de floraison: <span>${flower.blooming_period}</span><br>
-                        - Couleurs: <span>${flower.colors}</span><br>
-                        - Pollinisateurs: <span>${flower.pollinators}</span>
+                        - Flowering period: <span>${flower.blooming_period}</span><br>
+                        - Colors: <span>${flower.colors}</span><br>
+                        - Pollinators: <span>${flower.pollinators}</span>
                     </div>
                 </div>`;
           container.insertAdjacentHTML("beforeend", flowerHTML);
