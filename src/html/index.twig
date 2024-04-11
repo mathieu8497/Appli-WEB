@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Greenhouse Control</title>
-		<link rel="stylesheet" href="../css/style.css">
-	</head>
-	<body>
+<head>
+    <meta charset="UTF-8">
+    <title>Greenhouse Control</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
 		<div class="menu">
 			<h1>Greenhouse Control</h1>
 			<a href="../php/flowerpedia.php">
 				<h2 class="bouton">Flowerpedia</h2>
 			</a>
 		</div>
-		<div
-			id="plantes">{# Les plantes seront ajoutées ici dynamiquement #}
-		</div>
-		<script src="../javascript/script.js"></script>
-	</body>
+    <ul class="plant-list">
+        {% for flower in flowers %}
+            {% set imageFilename = flower.common_name|replace({' ': '_', '\'': '', '.': '', ',': '', '(': '', ')': '', '&': 'and'})|lower %}
+            {% set imagePath = '../images/' ~ imageFilename ~ '.jpg' %}
+            <li class="plant-item">
+                <img src="{{ imagePath }}" alt="{{ flower.common_name }}" class="plant-image">
+                <div class="plant-info">
+                    <h3>{{ flower.common_name }}</h3>
+                    <p><span class="plant-label">Humidity:</span> {{ flower.humidity is not null ? flower.humidity ~ '%' : 'No value' }}</p>
+                    <p><span class="plant-label">Temperature:</span> {{ flower.temperature is not null ? flower.temperature ~ '°C' : 'No value' }}</p>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+    <script src="../javascript/script.js"></script>
+</body>
 </html>

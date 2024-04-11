@@ -1,5 +1,5 @@
 CREATE TABLE flowers (
-    id SERIAL PRIMARY KEY,
+    id_flower SERIAL PRIMARY KEY,
     common_name VARCHAR(255) NOT NULL,
     scientific_name VARCHAR(255) NOT NULL,
     family VARCHAR(255) NOT NULL,
@@ -73,3 +73,17 @@ INSERT INTO flowers (common_name, scientific_name, family, plant_type, blooming_
 ('Snapdragon', 'Antirrhinum majus', 'Plantaginaceae', 'annual', 'Spring-Fall', 'Pink, Red, Yellow, White', 'Bees', TRUE),
 ('Coreopsis', 'Coreopsis', 'Asteraceae', 'perennial', 'Summer-Fall', 'Yellow, Gold', 'Bees, Butterflies',FALSE),
 ('Allium', 'Allium', 'Amaryllidaceae', 'perennial', 'Spring-Summer', 'Purple, White', 'Bees, Butterflies',FALSE);
+
+CREATE TABLE measures (
+    id_measure SERIAL PRIMARY KEY,
+    id_flower INT, -- Specify the correct data type
+    measure_date TIMESTAMP NOT NULL, -- Changed column name to avoid using reserved keywords and added TIMESTAMP type
+    temperature INT,
+    humidity INT,
+    FOREIGN KEY (id_flower) REFERENCES flowers(id_flower) -- Establishing the foreign key relationship
+);
+
+INSERT INTO measures (id_flower, measure_date, temperature, humidity) VALUES
+(1, '2002-03-19', 34, 52);
+
+
