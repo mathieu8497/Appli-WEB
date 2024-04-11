@@ -46,7 +46,8 @@ h1 {
   padding: 10px;
   border-radius: 8px;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .plant-image {
@@ -56,11 +57,73 @@ h1 {
   border-radius: 50%;
   object-fit: cover;
 }
-
-.plant-info {
-  line-height: 1.6;
+.info-table-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
 }
 
-.plant-label {
-  font-weight: bold;
+.plant-info, table {
+  margin: 0;
+  padding: 0;
+  width: calc(50% - 10px); /* Adjusts width to half of the container minus some margin */
+}
+
+.plant-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Aligns items at the start of the flex container */
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.plant-image {
+  flex-basis: 100px; /* Image width */
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-right: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+table {
+  border-collapse: collapse;
+  margin-left: 20px; /* Adds spacing between the table and the plant-info */
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+@media (min-width: 768px) {
+  .plant-item {
+      align-items: center;
+  }
+
+  .plant-image {
+      margin-right: 20px;
+  }
+
+  .info-table-container {
+      flex-grow: 1;
+  }
 }

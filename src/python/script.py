@@ -2,6 +2,11 @@ import serial
 import time
 import psycopg2
 import os
+import logging
+
+# Set up logging
+logging.basicConfig(filename='data_insertion.log', level=logging.DEBUG,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Retrieve database configuration from environment variables
 DB_HOST = os.getenv('DB_HOST')
@@ -19,10 +24,14 @@ BAUD_RATE = 19200  # Update this to match your device's baud rate
 
 def parse_data(data):
     """Parse the input data and return id_flower, humidity, and temperature."""
-    id_flower = int(data[:2])
-    humidity = int(data[4:6])
-    temperature = int(data[-2:])
-    return id_flower, humidity, temperature
+    try:
+        id_flower = int(data[:2])
+        humidity = int(data[4:6])
+        temperature = int(data[-2:])
+        return id_flower, humidity, temperature
+    except ValueError as e:
+        logging.error(f"Error parsing data: {data}", exc_info=True)
+        raise
 
 def insert_data(id_flower, humidity, temperature):
     """Insert the data into the database."""
@@ -34,33 +43,35 @@ def insert_data(id_flower, humidity, temperature):
                     (id_flower, humidity, temperature))
         conn.commit()
         cur.close()
+        logging.info(f"Inserted: Flower ID {id_flower}, Humidity {humidity}, Temperature {temperature}")
     except (Exception, psycopg2.DatabaseError) as error:
-        print(error)
+        logging.error(f"Error inserting data: {error}", exc_info=True)
     finally:
         if conn is not None:
             conn.close()
 
 try:
-    # Initialize serial connection
     ser = serial.Serial(COM_PORT, BAUD_RATE, timeout=1)
-    print(f"Connected to {COM_PORT} at {BAUD_RATE} baud rate.")
+    logging.info(f"Connected to {COM_PORT} at {BAUD_RATE} baud rate.")
 
-    # Continuous reading loop
     while True:
         if ser.in_waiting > 0:
             data = ser.readline().decode('utf-8').rstrip()
-            print(f"Data received: {data}")
-            id_flower, humidity, temperature = parse_data(data)
-            insert_data(id_flower, humidity, temperature)
+            logging.info(f"Raw data received: {data}")  # Log raw data received
+            try:
+                id_flower, humidity, temperature = parse_data(data)
+                insert_data(id_flower, humidity, temperature)
+            except Exception as e:
+                logging.error(f"Error processing data: {data}", exc_info=True)
         time.sleep(0.1)  # Small delay to reduce CPU usage
 
 except serial.SerialException as e:
-    print(f"Error opening the serial port: {e}")
+    logging.error(f"Error opening the serial port: {e}")
 
 except KeyboardInterrupt:
-    print("\nProgram terminated by user.")
+    logging.info("Program terminated by user.")
 
 finally:
     if 'ser' in locals() or 'ser' in globals():
         ser.close()
-        print("Serial connection closed.")
+        logging.info("Serial connection closed.")

@@ -1,0 +1,42 @@
+2024-04-11 18:30:04,546 - INFO - Connected to COM7 at 19200 baud rate.
+2024-04-11 18:30:13,103 - INFO - Raw data received: 19 H34T36
+2024-04-11 18:30:15,814 - ERROR - Error inserting data: 
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 40, in insert_data
+    conn = psycopg2.connect(DB_CONNECTION)
+  File "C:\Users\mathi\AppData\Local\Programs\Python\Python310\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError
+2024-04-11 18:38:53,259 - INFO - Program terminated by user.
+2024-04-11 18:38:53,268 - INFO - Serial connection closed.
+2024-04-11 18:38:59,527 - INFO - Connected to COM7 at 19200 baud rate.
+2024-04-11 18:39:03,232 - INFO - Raw data received: 19 H34T36
+2024-04-11 18:39:05,933 - ERROR - Error inserting data: 
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 40, in insert_data
+    conn = psycopg2.connect(DB_CONNECTION)
+  File "C:\Users\mathi\AppData\Local\Programs\Python\Python310\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError
+2024-04-11 18:43:12,131 - INFO - Program terminated by user.
+2024-04-11 18:43:12,148 - INFO - Serial connection closed.
+2024-04-11 18:43:13,875 - INFO - Connected to COM7 at 19200 baud rate.
+2024-04-11 18:43:17,914 - INFO - Raw data received: 19 H34T36
+2024-04-11 18:43:20,630 - ERROR - Error inserting data: 
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 40, in insert_data
+    conn = psycopg2.connect(DB_CONNECTION)
+  File "C:\Users\mathi\AppData\Local\Programs\Python\Python310\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError
+2024-04-11 18:47:30,473 - INFO - Program terminated by user.
+2024-04-11 18:47:30,482 - INFO - Serial connection closed.
+2024-04-11 18:47:34,237 - INFO - Connected to COM7 at 19200 baud rate.
+2024-04-11 18:47:37,294 - INFO - Raw data received: 19 H34T36
+2024-04-11 18:47:40,011 - ERROR - Error inserting data: 
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 40, in insert_data
+    conn = psycopg2.connect(DB_CONNECTION)
+  File "C:\Users\mathi\AppData\Local\Programs\Python\Python310\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError
