@@ -8,7 +8,7 @@ BAUD_RATE = 19200  # Should match the receiver's baud rate
 try:
     with serial.Serial(COM_PORT_SENDER, BAUD_RATE, timeout=1) as ser_sender:
         print(f"Sending data to {COM_PORT_SENDER}...")
-        ser_sender.write(b'01 H35T35\n')  # Sending test data
+        ser_sender.write(b'01 H50T10\n')  # Sending test data
         time.sleep(1)  # Wait a bit for data to be sent
         print("Data sent.")
 except Exception as e:

@@ -105,3 +105,24 @@ Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: '5T'
 2024-04-16 14:22:55,140 - INFO - Raw data received: 01 H35T35
 2024-04-16 14:22:55,173 - INFO - Inserted: Flower ID 1, Humidity 35, Temperature 35
+2024-04-16 14:25:39,089 - INFO - Program terminated by user.
+2024-04-16 14:25:39,097 - INFO - Serial connection closed.
+2024-04-16 14:25:41,471 - INFO - Connected to COM7 at 19200 baud rate.
+2024-04-16 14:25:51,312 - INFO - Raw data received: 01 H35T35
+2024-04-16 14:25:51,355 - INFO - Inserted: Flower ID 1, Humidity 35, Temperature 35
+2024-04-16 14:28:30,395 - ERROR - Error opening the serial port: ClearCommError failed (OSError(22, 'Fonction incorrecte.', None, 1))
+2024-04-16 14:28:30,410 - INFO - Serial connection closed.
+2024-04-16 14:50:05,138 - INFO - Connected to COM7 at 19200 baud rate.
+2024-04-16 14:50:08,689 - INFO - Raw data received: 01 H35T35
+2024-04-16 14:50:08,744 - INFO - Inserted: Flower ID 1, Humidity 35, Temperature 35
+2024-04-16 15:06:14,552 - INFO - Program terminated by user.
+2024-04-16 15:06:14,567 - INFO - Serial connection closed.
+2024-04-16 16:02:27,349 - INFO - Connected to COM7 at 19200 baud rate.
+2024-04-16 16:02:33,279 - INFO - Raw data received: 01 H35T35
+2024-04-16 16:02:33,374 - INFO - Inserted: Flower ID 1, Humidity 35, Temperature 35
+2024-04-16 16:03:13,524 - INFO - Raw data received: 01 H50T10
+2024-04-16 16:03:13,572 - INFO - Inserted: Flower ID 1, Humidity 50, Temperature 10
+2024-04-16 16:07:19,843 - INFO - Raw data received: 01 H50T10
+2024-04-16 16:07:19,905 - INFO - Inserted: Flower ID 1, Humidity 50, Temperature 10
+2024-04-16 16:13:10,349 - ERROR - Error opening the serial port: ClearCommError failed (OSError(22, 'Fonction incorrecte.', None, 1))
+2024-04-16 16:13:10,396 - INFO - Serial connection closed.

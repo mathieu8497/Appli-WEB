@@ -20,7 +20,6 @@ INSERT INTO flowers (common_name, scientific_name, family, plant_type, blooming_
 ('Peony', 'Paeonia', 'Paeoniaceae', 'perennial', 'Spring', 'Pink, Red, White', 'Bees',FALSE),
 ('Marigold', 'Tagetes', 'Asteraceae', 'annual', 'Summer-Fall', 'Yellow, Orange', 'Bees, Butterflies',FALSE),
 ('Daffodil', 'Narcissus', 'Amaryllidaceae', 'perennial', 'Spring', 'Yellow, White', 'Bees',FALSE),
-('Snapdragon', 'Antirrhinum', 'Plantaginaceae', 'annual', 'Spring-Fall', 'Pink, Red, Yellow, White', 'Bees',FALSE),
 ('Aster', 'Aster', 'Asteraceae', 'perennial', 'Summer-Fall', 'Purple, Blue, White', 'Bees, Butterflies',TRUE),
 ('Forget-me-not', 'Myosotis', 'Boraginaceae', 'perennial', 'Spring', 'Blue, Pink, White', 'Bees',FALSE),
 ('Lily of the Valley', 'Convallaria majalis', 'Asparagaceae', 'perennial', 'Spring', 'White', 'Bees',FALSE),
