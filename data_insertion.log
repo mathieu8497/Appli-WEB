@@ -40,3 +40,68 @@ Traceback (most recent call last):
   File "C:\Users\mathi\AppData\Local\Programs\Python\Python310\lib\site-packages\psycopg2\__init__.py", line 122, in connect
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
 psycopg2.OperationalError
+2024-04-16 14:00:40,059 - INFO - Connected to COM7 at 19200 baud rate.
+2024-04-16 14:00:45,758 - INFO - Raw data received: 19 H34T36
+2024-04-16 14:00:57,540 - ERROR - Error inserting data: 
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 40, in insert_data
+    conn = psycopg2.connect(DB_CONNECTION)
+  File "C:\Users\mathi\AppData\Local\Programs\Python\Python310\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError
+2024-04-16 14:03:34,095 - INFO - Program terminated by user.
+2024-04-16 14:03:34,103 - INFO - Serial connection closed.
+2024-04-16 14:03:44,903 - INFO - Connected to COM7 at 19200 baud rate.
+2024-04-16 14:03:49,717 - INFO - Raw data received: 19 H34T36
+2024-04-16 14:03:49,738 - ERROR - Error inserting data: connection to server at "localhost" (::1), port 55432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 40, in insert_data
+    conn = psycopg2.connect(DB_CONNECTION)
+  File "C:\Users\mathi\AppData\Local\Programs\Python\Python310\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 55432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+2024-04-16 14:06:11,831 - INFO - Program terminated by user.
+2024-04-16 14:06:11,843 - INFO - Serial connection closed.
+2024-04-16 14:06:15,952 - INFO - Connected to COM7 at 19200 baud rate.
+2024-04-16 14:06:18,536 - INFO - Raw data received: 19 H34T36
+2024-04-16 14:06:19,286 - ERROR - Error inserting data: permission denied for table measures
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 42, in insert_data
+    cur.execute("INSERT INTO measures (id_flower, measure_date, humidity, temperature) VALUES (%s, NOW(), %s, %s)",
+psycopg2.errors.InsufficientPrivilege: permission denied for table measures
+
+2024-04-16 14:09:29,415 - INFO - Program terminated by user.
+2024-04-16 14:09:29,446 - INFO - Serial connection closed.
+2024-04-16 14:09:36,028 - INFO - Connected to COM7 at 19200 baud rate.
+2024-04-16 14:09:38,495 - INFO - Raw data received: 19 H34T36
+2024-04-16 14:09:38,544 - ERROR - Error inserting data: permission denied for sequence measures_id_measure_seq
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 42, in insert_data
+    cur.execute("INSERT INTO measures (id_flower, measure_date, humidity, temperature) VALUES (%s, NOW(), %s, %s)",
+psycopg2.errors.InsufficientPrivilege: permission denied for sequence measures_id_measure_seq
+
+2024-04-16 14:13:02,339 - INFO - Program terminated by user.
+2024-04-16 14:13:02,349 - INFO - Serial connection closed.
+2024-04-16 14:14:37,326 - INFO - Connected to COM7 at 19200 baud rate.
+2024-04-16 14:14:39,450 - INFO - Raw data received: 19 H34T36
+2024-04-16 14:14:39,512 - INFO - Inserted: Flower ID 19, Humidity 34, Temperature 36
+2024-04-16 14:21:59,498 - INFO - Raw data received: 1 H35T35
+2024-04-16 14:21:59,499 - ERROR - Error parsing data: 1 H35T35
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 29, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '5T'
+2024-04-16 14:21:59,518 - ERROR - Error processing data: 1 H35T35
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 62, in <module>
+    id_flower, humidity, temperature = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 29, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '5T'
+2024-04-16 14:22:55,140 - INFO - Raw data received: 01 H35T35
+2024-04-16 14:22:55,173 - INFO - Inserted: Flower ID 1, Humidity 35, Temperature 35

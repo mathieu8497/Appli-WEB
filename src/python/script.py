@@ -9,11 +9,11 @@ logging.basicConfig(filename='data_insertion.log', level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Retrieve database configuration from environment variables
-DB_HOST = os.getenv('DB_HOST')
-DB_USER = os.getenv('DB_USER')
-DB_PASSWORD = os.getenv('DB_PASSWORD')
-DB_DB = os.getenv('DB_DB')
-DB_PORT = '5432'  # Default PostgreSQL port. Change if different.
+DB_HOST = 'localhost'
+DB_USER = 'acu'
+DB_PASSWORD = 'acu'
+DB_DB = 'acudb'
+DB_PORT = '55432'  # Default PostgreSQL port. Change if different.
 
 # Database connection string
 DB_CONNECTION = f"dbname='{DB_DB}' user='{DB_USER}' password='{DB_PASSWORD}' host='{DB_HOST}' port='{DB_PORT}'"

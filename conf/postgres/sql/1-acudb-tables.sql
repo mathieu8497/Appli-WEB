@@ -76,8 +76,8 @@ INSERT INTO flowers (common_name, scientific_name, family, plant_type, blooming_
 
 CREATE TABLE measures (
     id_measure SERIAL PRIMARY KEY,
-    id_flower INT, -- Specify the correct data type
-    measure_date TIMESTAMP NOT NULL, -- Changed column name to avoid using reserved keywords and added TIMESTAMP type
+    id_flower INT,
+    measure_date TIMESTAMP NOT NULL,
     temperature INT,
     humidity INT,
     FOREIGN KEY (id_flower) REFERENCES flowers(id_flower) -- Establishing the foreign key relationship
