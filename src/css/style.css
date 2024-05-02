@@ -1,3 +1,6 @@
+* {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
@@ -126,4 +129,69 @@ tr:nth-child(odd) {
   .info-table-container {
       flex-grow: 1;
   }
+}
+
+/*Insertion Retour en haut*/
+
+#back_top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-image: linear-gradient(
+      45deg,
+      transparent 0%,
+      transparent 30%,
+      rgba(231, 84, 216, 0.5) 30%,
+      rgba(231, 84, 216, 0.5) 58%,
+      transparent 58%,
+      transparent 72%,
+      rgba(122, 77, 232, 0.5) 72%,
+      rgba(122, 77, 232, 0.5) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgb(67, 74, 240) 0%,
+      rgb(67, 74, 240) 33%,
+      rgb(231, 84, 216) 33%,
+      rgb(231, 84, 216) 47%,
+      transparent 47%,
+      transparent 69%,
+      rgb(122, 77, 232) 69%,
+      rgb(122, 77, 232) 100%
+    ),
+    linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+#back_top:hover {
+  background-image: linear-gradient(
+      135deg,
+      transparent 0%,
+      transparent 15%,
+      rgba(177, 152, 245, 0.5) 15%,
+      rgba(177, 152, 245, 0.5) 71%,
+      transparent 71%,
+      transparent 90%,
+      rgba(116, 94, 203, 0.5) 90%,
+      rgba(116, 94, 203, 0.5) 100%
+    ),
+    linear-gradient(
+      45deg,
+      transparent 0%,
+      transparent 47%,
+      rgb(177, 152, 245) 47%,
+      rgb(177, 152, 245) 58%,
+      rgb(137, 114, 217) 58%,
+      rgb(137, 114, 217) 80%,
+      transparent 80%,
+      transparent 100%
+    ),
+    linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
 }

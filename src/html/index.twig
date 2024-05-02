@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Greenhouse Control</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Greenhouse Control</title>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
 		<div class="menu">
 			<h1>Greenhouse Control</h1>
 			<a href="../php/flowerpedia.php">
 				<h2 class="bouton">Flowerpedia</h2>
 			</a>
 		</div>
-    <ul class="plant-list">
-        {% for flower in flowers %}
-            {% set imageFilename = flower.common_name|replace({' ': '_', '\'': '', '.': '', ',': '', '(': '', ')': '', '&': 'and'})|lower %}
+		<ul class="plant-list">
+			{% for flower in flowers %}
+				{% set imageFilename = flower.common_name|replace({' ': '_', '\'': '', '.': '', ',': '', '(': '', ')': '', '&': 'and'})|lower %}
             {% set imagePath = '../images/' ~ imageFilename ~ '.jpg' %}
             <li class="plant-item">
     <img src="{{ imagePath }}" alt="{{ flower.common_name }}" class="plant-image">
@@ -44,6 +44,10 @@
             </li>
         {% endfor %}
     </ul>
+        <button id="back_top" title="Go to top"><img src="../backtop.svg" alt="go to top"></button><!--BOUTON VERS LE HAUT-->
+
     <script src="../javascript/script.js"></script>
+        <script src="../javascript/script_flowerpedia.js"></script>
+
 </body>
 </html>
