@@ -67,10 +67,13 @@ h1 {
   width: 100%;
 }
 
-.plant-info, table {
+.plant-info,
+table {
   margin: 0;
   padding: 0;
-  width: calc(50% - 10px); /* Adjusts width to half of the container minus some margin */
+  width: calc(
+    50% - 10px
+  ); /* Adjusts width to half of the container minus some margin */
 }
 
 .plant-item {
@@ -100,11 +103,14 @@ table {
   margin-left: 20px; /* Adds spacing between the table and the plant-info */
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid #ddd;
 }
 
-th, td {
+th,
+td {
   text-align: left;
   padding: 8px;
 }
@@ -119,15 +125,15 @@ tr:nth-child(odd) {
 
 @media (min-width: 768px) {
   .plant-item {
-      align-items: center;
+    align-items: center;
   }
 
   .plant-image {
-      margin-right: 20px;
+    margin-right: 20px;
   }
 
   .info-table-container {
-      flex-grow: 1;
+    flex-grow: 1;
   }
 }
 

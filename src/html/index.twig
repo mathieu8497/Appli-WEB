@@ -21,27 +21,30 @@
     <li class="plant-item">
         <img src="{{ imagePath }}" alt="{{ flower.common_name }}" class="plant-image">
         <div class="info-table-container">
-            <div class="plant-info">
-                <h3>{{ flower.common_name }}</h3>
-                <p><span class="plant-label">Last Measurement Date:</span> {{ flower.last_measure_date ? flower.last_measure_date : 'No value' }}</p>
-                <p><span class="plant-label">Last Humidity:</span> {{ flower.last_humidity ? flower.last_humidity ~ '%' : 'No value' }}</p>
-                <p><span class="plant-label">Last Temperature:</span> {{ flower.last_temperature ? flower.last_temperature ~ '°C' : 'No value' }}</p>
-            </div>
+<div class="plant-info">
+    <h3>{{ flower.common_name }}</h3>
+    <p><span class="plant-label">Last Measurement Date:</span> {{ flower.last_measure_date ? flower.last_measure_date : 'No value' }}</p>
+    <p><span class="plant-label">Last Humidity:</span> {{ flower.last_humidity ? flower.last_humidity ~ '%' : 'No value' }}</p>
+    <p><span class="plant-label">Last Temperature:</span> {{ flower.last_temperature ? flower.last_temperature ~ '°C' : 'No value' }}</p>
+    <p><span class="plant-label">Last Brightness:</span> {{ flower.last_brightness ? flower.last_brightness ~ ' lx' : 'No value' }}</p>
+</div>
 
-					<table>
-                        <tr>
-                            <th>Date</th>
-                            <th>Temperature (°C)</th>
-                            <th>Humidity (%)</th>
-                        </tr>
-                        {% for i in 0..2 %}
-                            <tr>
-                                <td>{{ flower.measure_dates[i] ? flower.measure_dates[i] : 'No data' }}</td>
-                                <td>{{ flower.temperatures[i] ? flower.temperatures[i] : 'No data' }}</td>
-                                <td>{{ flower.humidities[i] ? flower.humidities[i] : 'No data' }}</td>
-                            </tr>
-                        {% endfor %}
-                    </table>
+<table>
+    <tr>
+        <th>Date</th>
+        <th>Temperature (°C)</th>
+        <th>Humidity (%)</th>
+        <th>Brightness (lx)</th>
+    </tr>
+    {% for i in 0..2 %}
+    <tr>
+        <td>{{ flower.measure_dates[i] ? flower.measure_dates[i] : 'No data' }}</td>
+        <td>{{ flower.temperatures[i] ? flower.temperatures[i] : 'No data' }}</td>
+        <td>{{ flower.humidities[i] ? flower.humidities[i] : 'No data' }}</td>
+        <td>{{ flower.brightnesses[i] ? flower.brightnesses[i] : 'No data' }}</td>
+    </tr>
+    {% endfor %}
+</table>
         </div>
             <div id="chart-of-container"> 
             <button class="bouton toggle-graph" type="button">See Historical Graph</button>
@@ -54,7 +57,7 @@ var ctx = document.getElementById('chart-{{ loop.index }}').getContext('2d');
 var chart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: {{ flower.all_measure_dates|json_encode()|raw }}, // Ensure this is in chronological order
+        labels: {{ flower.all_measure_dates|json_encode()|raw }},
         datasets: [{
             label: 'Temperature (°C)',
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
@@ -67,8 +70,15 @@ var chart = new Chart(ctx, {
             borderColor: 'rgba(54, 162, 235, 1)',
             data: {{ flower.all_humidities|json_encode()|raw }},
             fill: false
+        }, {
+            label: 'Brightness (lx)',
+            backgroundColor: 'rgba(255, 206, 86, 0.2)',
+            borderColor: 'rgba(255, 206, 86, 1)',
+            data: {{ flower.all_brightnesses|json_encode()|raw }},
+            fill: false
         }]
-    },    options: {
+    },
+    options: {
         scales: {
             yAxes: [{
                 ticks: {

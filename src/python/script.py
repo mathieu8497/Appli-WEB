@@ -19,31 +19,33 @@ DB_PORT = '55432'  # Default PostgreSQL port. Change if different.
 DB_CONNECTION = f"dbname='{DB_DB}' user='{DB_USER}' password='{DB_PASSWORD}' host='{DB_HOST}' port='{DB_PORT}'"
 
 # Configuration for serial communication
-COM_PORT = 'COM7'  # Update this to your actual COM port
+COM_PORT = 'COM2'  # Update this to your actual COM port
+# COM_PORT = 'COM7'  # Update this to your actual COM port
 BAUD_RATE = 19200  # Update this to match your device's baud rate
 
 def parse_data(data):
-    """Parse the input data and return id_flower, humidity, and temperature."""
+    """Parse the input data and return id_flower, humidity, temperature, and brightness."""
     try:
         id_flower = int(data[:2])
         humidity = int(data[4:6])
-        temperature = int(data[-2:])
-        return id_flower, humidity, temperature
+        temperature = int(data[7:9])
+        brightness = int(data[10:13])
+        return id_flower, humidity, temperature, brightness
     except ValueError as e:
         logging.error(f"Error parsing data: {data}", exc_info=True)
         raise
 
-def insert_data(id_flower, humidity, temperature):
-    """Insert the data into the database."""
+def insert_data(id_flower, humidity, temperature, brightness):
+    """Insert the data into the database including brightness."""
     conn = None
     try:
         conn = psycopg2.connect(DB_CONNECTION)
         cur = conn.cursor()
-        cur.execute("INSERT INTO measures (id_flower, measure_date, humidity, temperature) VALUES (%s, NOW(), %s, %s)",
-                    (id_flower, humidity, temperature))
+        cur.execute("INSERT INTO measures (id_flower, measure_date, humidity, temperature, brightness) VALUES (%s, NOW(), %s, %s, %s)",
+                    (id_flower, humidity, temperature, brightness))
         conn.commit()
         cur.close()
-        logging.info(f"Inserted: Flower ID {id_flower}, Humidity {humidity}, Temperature {temperature}")
+        logging.info(f"Inserted: Flower ID {id_flower}, Humidity {humidity}, Temperature {temperature}, Brightness {brightness}")
     except (Exception, psycopg2.DatabaseError) as error:
         logging.error(f"Error inserting data: {error}", exc_info=True)
     finally:
@@ -59,8 +61,8 @@ try:
             data = ser.readline().decode('utf-8').rstrip()
             logging.info(f"Raw data received: {data}")  # Log raw data received
             try:
-                id_flower, humidity, temperature = parse_data(data)
-                insert_data(id_flower, humidity, temperature)
+                id_flower, humidity, temperature, brightness = parse_data(data)
+                insert_data(id_flower, humidity, temperature, brightness)
             except Exception as e:
                 logging.error(f"Error processing data: {data}", exc_info=True)
         time.sleep(0.1)  # Small delay to reduce CPU usage

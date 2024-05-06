@@ -126,3 +126,15 @@ ValueError: invalid literal for int() with base 10: '5T'
 2024-04-16 16:07:19,905 - INFO - Inserted: Flower ID 1, Humidity 50, Temperature 10
 2024-04-16 16:13:10,349 - ERROR - Error opening the serial port: ClearCommError failed (OSError(22, 'Fonction incorrecte.', None, 1))
 2024-04-16 16:13:10,396 - INFO - Serial connection closed.
+2024-05-06 19:42:14,761 - ERROR - Error opening the serial port: could not open port 'COM7': FileNotFoundError(2, 'Le fichier spécifié est introuvable.', None, 2)
+2024-05-06 19:42:19,891 - ERROR - Error opening the serial port: could not open port 'COM7': FileNotFoundError(2, 'Le fichier spécifié est introuvable.', None, 2)
+2024-05-06 19:42:40,006 - ERROR - Error opening the serial port: could not open port 'COM7': FileNotFoundError(2, 'Le fichier spécifié est introuvable.', None, 2)
+2024-05-06 19:43:30,172 - ERROR - Error opening the serial port: could not open port 'COM7': FileNotFoundError(2, 'Le fichier spécifié est introuvable.', None, 2)
+2024-05-06 19:54:10,451 - ERROR - Error opening the serial port: could not open port 'COM7': FileNotFoundError(2, 'Le fichier spécifié est introuvable.', None, 2)
+2024-05-06 20:06:10,339 - INFO - Connected to COM2 at 19200 baud rate.
+2024-05-06 20:06:29,912 - INFO - Raw data received: 01 H80T37L200
+2024-05-06 20:06:29,960 - INFO - Inserted: Flower ID 1, Humidity 80, Temperature 37, Brightness 200
+2024-05-06 20:13:41,571 - INFO - Raw data received: 01 H30T25L250
+2024-05-06 20:13:41,594 - INFO - Inserted: Flower ID 1, Humidity 30, Temperature 25, Brightness 250
+2024-05-06 20:17:29,441 - INFO - Program terminated by user.
+2024-05-06 20:17:29,441 - INFO - Serial connection closed.
