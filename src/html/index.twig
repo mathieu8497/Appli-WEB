@@ -4,6 +4,8 @@
 		<meta charset="UTF-8">
 		<title>Greenhouse Control</title>
 		<link rel="stylesheet" href="../css/style.css">
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 	</head>
 	<body>
 		<div class="menu">
@@ -15,16 +17,16 @@
 		<ul class="plant-list">
 			{% for flower in flowers %}
 				{% set imageFilename = flower.common_name|replace({' ': '_', '\'': '', '.': '', ',': '', '(': '', ')': '', '&': 'and'})|lower %}
-            {% set imagePath = '../images/' ~ imageFilename ~ '.jpg' %}
-            <li class="plant-item">
-    <img src="{{ imagePath }}" alt="{{ flower.common_name }}" class="plant-image">
-    <div class="info-table-container">
-        <div class="plant-info">
-                    <h3>{{ flower.common_name }}</h3>
-                    <p><span class="plant-label">Last Measurement Date:</span> {{ flower.last_measure_date ? flower.last_measure_date : 'No value' }}</p>
-                    <p><span class="plant-label">Last Humidity:</span> {{ flower.last_humidity ? flower.last_humidity ~ '%' : 'No value' }}</p>
-                    <p><span class="plant-label">Last Temperature:</span> {{ flower.last_temperature ? flower.last_temperature ~ '°C' : 'No value' }}</p>
-                            </div>
+    {% set imagePath = '../images/' ~ imageFilename ~ '.jpg' %}
+    <li class="plant-item">
+        <img src="{{ imagePath }}" alt="{{ flower.common_name }}" class="plant-image">
+        <div class="info-table-container">
+            <div class="plant-info">
+                <h3>{{ flower.common_name }}</h3>
+                <p><span class="plant-label">Last Measurement Date:</span> {{ flower.last_measure_date ? flower.last_measure_date : 'No value' }}</p>
+                <p><span class="plant-label">Last Humidity:</span> {{ flower.last_humidity ? flower.last_humidity ~ '%' : 'No value' }}</p>
+                <p><span class="plant-label">Last Temperature:</span> {{ flower.last_temperature ? flower.last_temperature ~ '°C' : 'No value' }}</p>
+            </div>
 
 					<table>
                         <tr>
@@ -40,6 +42,44 @@
                             </tr>
                         {% endfor %}
                     </table>
+        </div>
+            <div id="chart-of-container"> 
+            <button class="bouton toggle-graph" type="button">See Historical Graph</button>
+            <div class="chart-container" style="display:none;">
+                <canvas id="chart-{{ loop.index }}"></canvas>
+            </div>
+            </div>
+<script>
+var ctx = document.getElementById('chart-{{ loop.index }}').getContext('2d');
+var chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: {{ flower.all_measure_dates|json_encode()|raw }}, // Ensure this is in chronological order
+        datasets: [{
+            label: 'Temperature (°C)',
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 1)',
+            data: {{ flower.all_temperatures|json_encode()|raw }},
+            fill: false
+        }, {
+            label: 'Humidity (%)',
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            data: {{ flower.all_humidities|json_encode()|raw }},
+            fill: false
+        }]
+    },    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+
                 </div>
             </li>
         {% endfor %}
