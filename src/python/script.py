@@ -3,6 +3,8 @@ import time
 import psycopg2
 import os
 import logging
+import numpy as np
+import cv2
 
 # Set up logging
 logging.basicConfig(filename='data_insertion.log', level=logging.DEBUG,
@@ -20,8 +22,8 @@ DB_CONNECTION = f"dbname='{DB_DB}' user='{DB_USER}' password='{DB_PASSWORD}' hos
 
 # Configuration for serial communication
 COM_PORT = 'COM2'  # Update this to your actual COM port
-# COM_PORT = 'COM7'  # Update this to your actual COM port
 BAUD_RATE = 19200  # Update this to match your device's baud rate
+Link_IP = 'http://192.168.61.27:8086/' # Link for showing videostream from camera
 
 def parse_data(data):
     """Parse the input data and return id_flower, humidity, temperature, and brightness."""
@@ -35,22 +37,52 @@ def parse_data(data):
         logging.error(f"Error parsing data: {data}", exc_info=True)
         raise
 
-def insert_data(id_flower, humidity, temperature, brightness):
-    """Insert the data into the database including brightness."""
+def insert_data(id_flower, humidity, temperature, brightness, flower_state):
+    """Insert the data into the database including brightness and flower state."""
     conn = None
     try:
         conn = psycopg2.connect(DB_CONNECTION)
         cur = conn.cursor()
-        cur.execute("INSERT INTO measures (id_flower, measure_date, humidity, temperature, brightness) VALUES (%s, NOW(), %s, %s, %s)",
-                    (id_flower, humidity, temperature, brightness))
+        cur.execute("INSERT INTO measures (id_flower, measure_date, humidity, temperature, brightness, state_flower) VALUES (%s, NOW(), %s, %s, %s, %s)",
+                    (id_flower, humidity, temperature, brightness, flower_state))
         conn.commit()
         cur.close()
-        logging.info(f"Inserted: Flower ID {id_flower}, Humidity {humidity}, Temperature {temperature}, Brightness {brightness}")
+        logging.info(f"Inserted: Flower ID {id_flower}, Humidity {humidity}, Temperature {temperature}, Brightness {brightness}, State {flower_state}")
     except (Exception, psycopg2.DatabaseError) as error:
         logging.error(f"Error inserting data: {error}", exc_info=True)
     finally:
         if conn is not None:
             conn.close()
+
+def show_video_capture(Link_IP):
+    """Get video from Link and take a picture."""
+    # Attempt to connect to the video stream
+    cap = cv2.VideoCapture(Link_IP)
+    if not cap.isOpened():
+        logging.info("Cannot open the stream.")
+        return
+    
+    # Read one frame from the video stream
+    ret, frame = cap.read()
+    if not ret:
+        logging.info("Failed to capture a frame from the stream.")
+        cap.release()
+        return
+    
+    # Specify the path to save the screenshot
+    save_path = '../../image_processing/screenshot.jpg'
+    
+    # Save the captured frame as an image
+    cv2.imwrite(save_path, frame)
+    logging.info(f'Screenshot saved to {save_path}')
+    
+    # Release the video capture object
+    cap.release()
+
+def evaluate_flower_state(image_path):
+    """Dummy function to evaluate the flower state. Implement actual logic here."""
+    # Actual image processing logic to determine the state of the flower should be implemented here
+    return
 
 try:
     ser = serial.Serial(COM_PORT, BAUD_RATE, timeout=1)
@@ -59,10 +91,14 @@ try:
     while True:
         if ser.in_waiting > 0:
             data = ser.readline().decode('utf-8').rstrip()
-            logging.info(f"Raw data received: {data}")  # Log raw data received
+            logging.info(f"Raw data received: {data}")
             try:
                 id_flower, humidity, temperature, brightness = parse_data(data)
-                insert_data(id_flower, humidity, temperature, brightness)
+                #show_video_capture(Link_IP)
+                #flower_state = evaluate_flower_state('../../image_processing/screenshot.jpg')
+                flower_state ='wilted'
+                insert_data(id_flower, humidity, temperature, brightness, flower_state)
+
             except Exception as e:
                 logging.error(f"Error processing data: {data}", exc_info=True)
         time.sleep(0.1)  # Small delay to reduce CPU usage
