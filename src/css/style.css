@@ -212,3 +212,18 @@ tr:nth-child(odd) {
   margin-top: 10px;
   display: none; /* Hide by default */
 }
+#state_flower_css {
+  color: #d35400; /* Bright orange for visibility */
+  font-weight: bold; /* Make the text bold */
+  background-color: #fbec5d; /* A light yellow background */
+  padding: 8px 12px; /* Add some padding around the text */
+  border: 1px solid #f39c12; /* Optional: add an orange border */
+  text-shadow: 1px 1px #fde3a7; /* Subtle shadow to lift the text visually */
+  font-size: 1.1em; /* Slightly larger text */
+  border-radius: 5px; /* Rounded corners for the background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft box shadow for depth */
+  display: inline-block; /* Ensures the padding and background encompass only the text */
+  margin-top: 10px; /* Spacing from any elements above */
+  margin-bottom: 10px; /* Spacing from any elements below */
+}
+

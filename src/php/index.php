@@ -22,33 +22,36 @@ try {
 
     // Adjusted SQL to fetch last measure date and last three measurements
     $sql = "
-    WITH ranked_measures AS (
-        SELECT
-            id_flower,
-            temperature,
-            humidity,
-            brightness,
-            measure_date,
-            ROW_NUMBER() OVER (PARTITION BY id_flower ORDER BY measure_date DESC) AS rn
-        FROM measures
-    )
+WITH ranked_measures AS (
     SELECT
-        f.common_name,
-        rm1.temperature AS last_temperature,
-        rm1.humidity AS last_humidity,
-        rm1.brightness AS last_brightness,
-        to_char(rm1.measure_date, 'YYYY-MM-DD HH24:MI') AS last_measure_date,
-        ARRAY_AGG(rm2.temperature ORDER BY rm2.measure_date DESC) AS temperatures,
-        ARRAY_AGG(rm2.humidity ORDER BY rm2.measure_date DESC) AS humidities,
-        ARRAY_AGG(rm2.brightness ORDER BY rm2.measure_date DESC) AS brightnesses,
-        ARRAY_AGG(to_char(rm2.measure_date, 'YYYY-MM-DD HH24:MI') ORDER BY rm2.measure_date DESC) AS measure_dates
-    FROM flowers f
-    LEFT JOIN ranked_measures rm1 ON f.id_flower = rm1.id_flower AND rm1.rn = 1
-    LEFT JOIN ranked_measures rm2 ON f.id_flower = rm2.id_flower
-    WHERE f.possessed = TRUE
-    GROUP BY f.common_name, rm1.temperature, rm1.humidity, rm1.brightness, rm1.measure_date
-    ORDER BY f.common_name;
-        ";
+        id_flower,
+        temperature,
+        humidity,
+        brightness,
+        state_flower,
+        measure_date,
+        ROW_NUMBER() OVER (PARTITION BY id_flower ORDER BY measure_date DESC) AS rn
+    FROM measures
+)
+SELECT
+    f.common_name,
+    rm1.temperature AS last_temperature,
+    rm1.humidity AS last_humidity,
+    rm1.brightness AS last_brightness,
+    rm1.state_flower AS last_state_flower,
+    to_char(rm1.measure_date, 'YYYY-MM-DD HH24:MI') AS last_measure_date,
+    ARRAY_AGG(rm2.temperature ORDER BY rm2.measure_date DESC) AS temperatures,
+    ARRAY_AGG(rm2.humidity ORDER BY rm2.measure_date DESC) AS humidities,
+    ARRAY_AGG(rm2.brightness ORDER BY rm2.measure_date DESC) AS brightnesses,
+    ARRAY_AGG(to_char(rm2.measure_date, 'YYYY-MM-DD HH24:MI') ORDER BY rm2.measure_date DESC) AS measure_dates
+FROM flowers f
+LEFT JOIN ranked_measures rm1 ON f.id_flower = rm1.id_flower AND rm1.rn = 1
+LEFT JOIN ranked_measures rm2 ON f.id_flower = rm2.id_flower
+WHERE f.possessed = TRUE
+GROUP BY f.common_name, rm1.temperature, rm1.humidity, rm1.brightness, rm1.state_flower, rm1.measure_date
+ORDER BY f.common_name;
+";
+
 
     $sth = $dbh->prepare($sql);
     $sth->execute();

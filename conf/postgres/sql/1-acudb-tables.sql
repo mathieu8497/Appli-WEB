@@ -80,10 +80,11 @@ CREATE TABLE measures (
     temperature INT,
     humidity INT,
     brightness INT,
+    state_flower char,
     FOREIGN KEY (id_flower) REFERENCES flowers(id_flower) -- Establishing the foreign key relationship
 );
 
-INSERT INTO measures (id_flower, measure_date, temperature, humidity, brightness) VALUES
+INSERT INTO measures (id_flower, measure_date, temperature, humidity, brightness, state_flower) VALUES
 (10, '2024-04-10', 22, 45, 300),
 (10, '2024-04-11', 24, 40, 200),
 

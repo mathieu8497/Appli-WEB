@@ -27,6 +27,8 @@
     <p><span class="plant-label">Last Humidity:</span> {{ flower.last_humidity ? flower.last_humidity ~ '%' : 'No value' }}</p>
     <p><span class="plant-label">Last Temperature:</span> {{ flower.last_temperature ? flower.last_temperature ~ '°C' : 'No value' }}</p>
     <p><span class="plant-label">Last Brightness:</span> {{ flower.last_brightness ? flower.last_brightness ~ ' lx' : 'No value' }}</p>
+    <p id="state_flower_css"><span class="plant-label">State of the Flower:</span> {{ flower.last_state_flower ? flower.last_state_flower ~ '' : 'No value'}}</p>
+
 </div>
 
 <table>

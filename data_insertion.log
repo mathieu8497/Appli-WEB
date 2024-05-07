@@ -138,3 +138,13 @@ ValueError: invalid literal for int() with base 10: '5T'
 2024-05-06 20:13:41,594 - INFO - Inserted: Flower ID 1, Humidity 30, Temperature 25, Brightness 250
 2024-05-06 20:17:29,441 - INFO - Program terminated by user.
 2024-05-06 20:17:29,441 - INFO - Serial connection closed.
+2024-05-07 08:25:34,060 - INFO - Connected to COM2 at 19200 baud rate.
+2024-05-07 08:25:50,059 - INFO - Raw data received: 01 H30T25L250
+2024-05-07 08:25:50,107 - INFO - Inserted: Flower ID 1, Humidity 30, Temperature 25, Brightness 250
+2024-05-07 08:26:46,911 - INFO - Program terminated by user.
+2024-05-07 08:26:46,912 - INFO - Serial connection closed.
+2024-05-07 17:42:31,994 - INFO - Connected to COM2 at 19200 baud rate.
+2024-05-07 17:43:22,551 - INFO - Raw data received: 01 H55T85L305
+2024-05-07 17:43:22,580 - INFO - Inserted: Flower ID 1, Humidity 55, Temperature 85, Brightness 305, State wilted
+2024-05-07 17:48:47,939 - INFO - Program terminated by user.
+2024-05-07 17:48:47,940 - INFO - Serial connection closed.
