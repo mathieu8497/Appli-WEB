@@ -23,7 +23,8 @@ DB_CONNECTION = f"dbname='{DB_DB}' user='{DB_USER}' password='{DB_PASSWORD}' hos
 # Configuration for serial communication
 COM_PORT = 'COM2'  # Update this to your actual COM port
 BAUD_RATE = 19200  # Update this to match your device's baud rate
-Link_IP = 'http://192.168.61.27:8086/' # Link for showing videostream from camera
+#Link_IP = 'http://192.168.61.27:8086/' # Link for showing videostream from camera
+Link_IP = 'http://localhost:8080/playlist.m3u8'
 
 def parse_data(data):
     """Parse the input data and return id_flower, humidity, temperature, and brightness."""
@@ -69,9 +70,9 @@ def show_video_capture(Link_IP):
         cap.release()
         return
     
-    # Specify the path to save the screenshot
-    save_path = '../../image_processing/screenshot.jpg'
-    
+    # Define the path to save the screenshot with the flower ID in the filename
+    save_path = os.path.join('image_processing', f'flower_{id_flower}.jpg')
+        
     # Save the captured frame as an image
     cv2.imwrite(save_path, frame)
     logging.info(f'Screenshot saved to {save_path}')
@@ -94,7 +95,7 @@ try:
             logging.info(f"Raw data received: {data}")
             try:
                 id_flower, humidity, temperature, brightness = parse_data(data)
-                #show_video_capture(Link_IP)
+                show_video_capture(Link_IP)
                 #flower_state = evaluate_flower_state('../../image_processing/screenshot.jpg')
                 flower_state ='wilted'
                 insert_data(id_flower, humidity, temperature, brightness, flower_state)
