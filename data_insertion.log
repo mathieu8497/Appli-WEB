@@ -268,3 +268,119 @@ cv2.error: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcode
 2024-05-15 08:51:16,782 - INFO - Raw data received: 27 H55T85L305
 2024-05-15 08:51:18,502 - INFO - Screenshot saved to image_processing\flower_27.jpg
 2024-05-15 08:51:18,547 - INFO - Inserted: Flower ID 27, Humidity 55, Temperature 85, Brightness 305, State wilted
+2024-05-15 11:01:04,340 - INFO - Connected to COM2 at 19200 baud rate.
+2024-05-15 11:01:16,234 - INFO - Raw data received: 27 H55T85L305
+2024-05-15 11:01:17,786 - INFO - Screenshot saved to image_processing\flower_27.jpg
+2024-05-15 11:01:17,789 - ERROR - Error processing data: 27 H55T85L305
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 225, in <module>
+    flower_state = evaluate_flower_state(path_flower_evaluate)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 201, in evaluate_flower_state
+    process_folder(dossier_images, dossier_resultats)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 141, in process_folder
+    for image_file in os.listdir(dossier_images):
+FileNotFoundError: [WinError 3] Le chemin d’accès spécifié est introuvable: '../../image_processing'
+2024-05-15 11:04:52,569 - INFO - Program terminated by user.
+2024-05-15 11:04:52,570 - INFO - Serial connection closed.
+2024-05-15 11:11:06,416 - INFO - Connected to COM2 at 19200 baud rate.
+2024-05-15 11:11:16,777 - INFO - Raw data received: 27 H55T85L305
+2024-05-15 11:11:17,964 - INFO - Screenshot saved to image_processing\flower_27.jpg
+2024-05-15 11:11:18,077 - ERROR - Error processing data: 27 H55T85L305
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 230, in <module>
+    flower_state = evaluate_flower_state(path_flower_evaluate)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 206, in evaluate_flower_state
+    healthy_hist = calculate_average_histogram(healthy_directory)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 178, in calculate_average_histogram
+    for filename in os.listdir(directory):
+FileNotFoundError: [WinError 3] Le chemin d’accès spécifié est introuvable: '../images'
+2024-05-15 11:12:30,199 - INFO - Program terminated by user.
+2024-05-15 11:12:30,200 - INFO - Serial connection closed.
+2024-05-15 11:12:43,489 - INFO - Connected to COM2 at 19200 baud rate.
+2024-05-15 11:12:46,216 - INFO - Raw data received: 27 H55T85L305
+2024-05-15 11:12:47,342 - INFO - Screenshot saved to image_processing\flower_27.jpg
+2024-05-15 11:12:47,441 - ERROR - Error processing data: 27 H55T85L305
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 230, in <module>
+    flower_state = evaluate_flower_state(path_flower_evaluate)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 206, in evaluate_flower_state
+    healthy_hist = calculate_average_histogram(healthy_directory)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 178, in calculate_average_histogram
+    for filename in os.listdir(directory):
+FileNotFoundError: [WinError 3] Le chemin d’accès spécifié est introuvable: '../images'
+2024-05-15 11:15:17,200 - INFO - Program terminated by user.
+2024-05-15 11:15:17,201 - INFO - Serial connection closed.
+2024-05-15 11:15:32,508 - INFO - Connected to COM2 at 19200 baud rate.
+2024-05-15 11:15:35,459 - INFO - Raw data received: 27 H55T85L305
+2024-05-15 11:15:36,682 - INFO - Screenshot saved to image_processing\flower_27.jpg
+2024-05-15 11:15:36,786 - ERROR - Error processing data: 27 H55T85L305
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 230, in <module>
+    flower_state = evaluate_flower_state(path_flower_evaluate)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 206, in evaluate_flower_state
+    healthy_hist = calculate_average_histogram(healthy_directory)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 178, in calculate_average_histogram
+    for filename in os.listdir(directory):
+FileNotFoundError: [WinError 3] Le chemin d’accès spécifié est introuvable: '../images'
+2024-05-15 11:18:58,224 - INFO - Program terminated by user.
+2024-05-15 11:18:58,224 - INFO - Serial connection closed.
+2024-05-15 11:20:23,053 - INFO - Connected to COM2 at 19200 baud rate.
+2024-05-15 11:20:26,543 - INFO - Raw data received: 27 H55T85L305
+2024-05-15 11:20:27,787 - INFO - Screenshot saved to image_processing\flower_27.jpg
+2024-05-15 11:20:28,019 - ERROR - Error processing data: 27 H55T85L305
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 230, in <module>
+    flower_state = evaluate_flower_state(path_flower_evaluate)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 206, in evaluate_flower_state
+    healthy_hist = calculate_average_histogram(healthy_directory)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 178, in calculate_average_histogram
+    for filename in os.listdir(directory):
+FileNotFoundError: [WinError 3] Le chemin d’accès spécifié est introuvable: '../images'
+2024-05-15 11:22:36,005 - INFO - Program terminated by user.
+2024-05-15 11:22:36,006 - INFO - Serial connection closed.
+2024-05-15 11:22:37,858 - INFO - Connected to COM2 at 19200 baud rate.
+2024-05-15 11:22:41,134 - INFO - Raw data received: 27 H55T85L305
+2024-05-15 11:22:42,342 - INFO - Screenshot saved to image_processing\flower_27.jpg
+2024-05-15 11:22:45,857 - ERROR - Error processing data: 27 H55T85L305
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 230, in <module>
+    flower_state = evaluate_flower_state(path_flower_evaluate)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 208, in evaluate_flower_state
+    results = compare_flower_health(test_directory, healthy_hist)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 189, in compare_flower_health
+    test_img = load_image_as_grayscale(test_image_path)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 166, in load_image_as_grayscale
+    grayscale_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+2024-05-15 11:23:26,154 - INFO - Program terminated by user.
+2024-05-15 11:23:26,155 - INFO - Serial connection closed.
+2024-05-15 11:23:29,277 - INFO - Connected to COM2 at 19200 baud rate.
+2024-05-15 11:23:31,563 - INFO - Raw data received: 27 H55T85L305
+2024-05-15 11:23:32,822 - INFO - Screenshot saved to image_processing\flower_27.jpg
+2024-05-15 11:23:35,734 - ERROR - Error processing data: 27 H55T85L305
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 230, in <module>
+    flower_state = evaluate_flower_state(path_flower_evaluate)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 208, in evaluate_flower_state
+    results = compare_flower_health(test_directory, healthy_hist)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 189, in compare_flower_health
+    test_img = load_image_as_grayscale(test_image_path)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 166, in load_image_as_grayscale
+    grayscale_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+2024-05-15 11:24:54,663 - INFO - Program terminated by user.
+2024-05-15 11:24:54,664 - INFO - Serial connection closed.
+2024-05-15 11:25:14,176 - INFO - Connected to COM2 at 19200 baud rate.
+2024-05-15 11:25:16,248 - INFO - Raw data received: 27 H55T85L305
+2024-05-15 11:25:17,589 - INFO - Screenshot saved to image_processing\flower_27.jpg
+2024-05-15 11:25:20,420 - INFO - Inserted: Flower ID 27, Humidity 55, Temperature 85, Brightness 305, State wilted
+2024-05-15 11:29:43,622 - INFO - Program terminated by user.
+2024-05-15 11:29:43,624 - INFO - Serial connection closed.
+2024-05-15 11:30:21,296 - INFO - Connected to COM2 at 19200 baud rate.
+2024-05-15 11:30:24,242 - INFO - Raw data received: 27 H55T85L305
+2024-05-15 11:30:25,559 - INFO - Screenshot saved to image_processing\flower_27.jpg
+2024-05-15 11:30:28,155 - INFO - Inserted: Flower ID 27, Humidity 55, Temperature 85, Brightness 305, State wilted
+2024-05-15 11:31:38,653 - INFO - Program terminated by user.
+2024-05-15 11:31:38,653 - INFO - Serial connection closed.

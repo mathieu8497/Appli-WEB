@@ -80,10 +80,135 @@ def show_video_capture(Link_IP):
     # Release the video capture object
     cap.release()
 
-def evaluate_flower_state(image_path):
-    """Dummy function to evaluate the flower state. Implement actual logic here."""
-    # Actual image processing logic to determine the state of the flower should be implemented here
-    return
+
+##################
+# Pré-traitement #
+##################
+
+# Fonction pour masquer les images 
+def process_image(image_path, dossier_resultats):
+    # Lecture de l'image
+    image = cv2.imread(image_path)
+    image_hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+
+    # Définition des plages de couleurs HSV pour différentes couleurs
+      # Définition des plages de couleurs HSV pour différentes couleurs
+    lower_green = np.array([25, 30, 10])
+    upper_green = np.array([85, 255, 255])
+
+    # Pour le noir/marron
+    lower_brown = np.array([0, 0, 0])
+    upper_brown = np.array([30, 255, 100])
+
+    # Pour le gris
+    lower_gray = np.array([0, 0, 50])
+    upper_gray = np.array([180, 50, 200])
+
+    # Pour le noir
+    lower_black = np.array([0, 0, 0])
+    upper_black = np.array([180, 255, 50])
+
+    # Création des masques pour les différentes couleurs
+    mask_green = cv2.inRange(image_hsv, lower_green, upper_green)
+    mask_brown = cv2.inRange(image_hsv, lower_brown, upper_brown)
+    mask_black = cv2.inRange(image_hsv, lower_black, upper_black)
+    mask_gray = cv2.inRange(image_hsv, lower_gray, upper_gray)
+
+    # Combinaison des masques pour obtenir un masque final
+    mask_final = cv2.bitwise_or(mask_green, mask_brown)
+    mask_final = cv2.bitwise_or(mask_final, mask_black)
+    mask_final = cv2.bitwise_or(mask_final, mask_gray)
+
+    # Inversion du masque pour exclure les couleurs spécifiées
+    mask_inverse = cv2.bitwise_not(mask_final)
+
+    # Conversion de l'image en format RGBA pour appliquer le masque d'opacité
+    image_rgba = cv2.cvtColor(image, cv2.COLOR_BGR2BGRA)
+    image_rgba[:, :, 3] = mask_inverse
+
+    # Génération du chemin de sauvegarde de l'image traitée
+    image_file = os.path.basename(image_path)
+    nom_fichier_traite = os.path.splitext(image_file)[0] + ".jpg"
+    chemin_sauvegarde = os.path.join(dossier_resultats, nom_fichier_traite)
+
+    # Enregistrement de l'image traitée
+    cv2.imwrite(chemin_sauvegarde, image_rgba)
+    # print(f"Image traitée enregistrée sous : {chemin_sauvegarde}")
+
+
+def process_folder(dossier_images, dossier_resultats):
+    # Traitement de chaque image dans le dossier
+    for image_file in os.listdir(dossier_images):
+        image_path = os.path.join(dossier_images, image_file)
+        if os.path.isfile(image_path) and image_path.lower().endswith(('.png', '.jpg', '.jpeg')):
+            process_image(image_path, dossier_resultats)
+
+
+
+# Analyse de chaque image dans le dossier
+# for image_file in liste_images:
+#     image_path = os.path.join(dossier_images, image_file)
+#     image = cv2.imread(image_path)
+    
+#     if is_faded(image):
+#         print(f"La fleur dans {image_file} est probablement fanée.")
+#     else:
+#         print(f"La fleur dans {image_file} est fraîche.")
+
+
+##################
+# Fanée ou non ? #
+##################
+
+def load_image_as_grayscale(image_path):
+    """ Charge une image et la convertit en niveaux de gris. """
+    image = cv2.imread(image_path)
+    grayscale_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    return grayscale_image
+
+def calculate_histogram(image, bins=256):
+    """ Calcule l'histogramme d'une image. """
+    hist = cv2.calcHist([image], [0], None, [bins], [0, 256])
+    cv2.normalize(hist, hist, 0, 255, cv2.NORM_MINMAX)
+    return hist
+
+def calculate_average_histogram(directory):
+    """ Calcule l'histogramme moyen pour toutes les images dans un dossier. """
+    histograms = []
+    for filename in os.listdir(directory):
+        if filename.endswith(('.png', '.jpg', '.jpeg')):  # Assurez-vous que ce sont des images JPEG
+            image_path = os.path.join(directory, filename)
+            img = load_image_as_grayscale(image_path)
+            hist = calculate_histogram(img)
+            histograms.append(hist)
+    average_hist = np.mean(histograms, axis=0)
+    return average_hist
+
+def compare_flower_health(test_image_path, healthy_hist, threshold=0.8):
+    """ Compare une image de test avec l'histogramme de référence pour déterminer la santé de la fleur. """
+    test_img = load_image_as_grayscale(test_image_path)
+    test_hist = calculate_histogram(test_img)
+    similarity = cv2.compareHist(healthy_hist, test_hist, cv2.HISTCMP_CORREL)
+    health_status = "healthy" if similarity > threshold else "wilted"
+    return health_status, similarity
+
+# Exemple d'utilisation
+def evaluate_flower_state(path_flower_evaluate) :
+    # fleurs à traiter (au début, dossier contenant une seule image)
+    dossier_images = 'C:/Users/mathi/Desktop/CPE 4-ETI/Projet Transversal/Appli WEB/image_processing'
+    # dossier contenant les images pré-traitées
+    dossier_resultats = 'C:/Users/mathi/Desktop/CPE 4-ETI/Projet Transversal/Appli WEB/src/resultats'
+    process_folder(dossier_images, dossier_resultats)
+
+    healthy_directory = 'C:/Users/mathi/Desktop/CPE 4-ETI/Projet Transversal/Appli WEB/src/images'
+    test_directory = "C:/Users/mathi/Desktop/CPE 4-ETI/Projet Transversal/Appli WEB/src/resultats/" + path_flower_evaluate# Image de test unique
+    healthy_hist = calculate_average_histogram(healthy_directory)
+
+    status, score = compare_flower_health(test_directory, healthy_hist)
+    print("state: ", status)
+    return(status)
+
+# Main loop
 
 try:
     ser = serial.Serial(COM_PORT, BAUD_RATE, timeout=1)
@@ -96,8 +221,8 @@ try:
             try:
                 id_flower, humidity, temperature, brightness = parse_data(data)
                 show_video_capture(Link_IP)
-                #flower_state = evaluate_flower_state('../../image_processing/screenshot.jpg')
-                flower_state ='wilted'
+                path_flower_evaluate = f'flower_{id_flower}.jpg'
+                flower_state = evaluate_flower_state(path_flower_evaluate)
                 insert_data(id_flower, humidity, temperature, brightness, flower_state)
 
             except Exception as e:
