@@ -32,7 +32,7 @@ def parse_data(data):
         id_flower = int(data[:2])
         humidity = int(data[4:6])
         temperature = int(data[7:9])
-        brightness = int(data[10:13])
+        brightness = int(data[10:14])
         return id_flower, humidity, temperature, brightness
     except ValueError as e:
         logging.error(f"Error parsing data: {data}", exc_info=True)
@@ -71,7 +71,7 @@ def show_video_capture(Link_IP):
         return
     
     # Define the path to save the screenshot with the flower ID in the filename
-    save_path = os.path.join('image_processing', f'flower_{id_flower}.jpg')
+    save_path = os.path.join('image_processing', f'flower_{id_flower}.png')
         
     # Save the captured frame as an image
     cv2.imwrite(save_path, frame)
@@ -128,13 +128,11 @@ def process_image(image_path, dossier_resultats):
 
     # Génération du chemin de sauvegarde de l'image traitée
     image_file = os.path.basename(image_path)
-    nom_fichier_traite = os.path.splitext(image_file)[0] + ".jpg"
+    nom_fichier_traite = os.path.splitext(image_file)[0] + ".png"
     chemin_sauvegarde = os.path.join(dossier_resultats, nom_fichier_traite)
-
     # Enregistrement de l'image traitée
     cv2.imwrite(chemin_sauvegarde, image_rgba)
-    # print(f"Image traitée enregistrée sous : {chemin_sauvegarde}")
-
+    print(f"Image traitée enregistrée sous : {chemin_sauvegarde}")
 
 def process_folder(dossier_images, dossier_resultats):
     # Traitement de chaque image dans le dossier
@@ -189,21 +187,21 @@ def compare_flower_health(test_image_path, healthy_hist, threshold=0.8):
     test_img = load_image_as_grayscale(test_image_path)
     test_hist = calculate_histogram(test_img)
     similarity = cv2.compareHist(healthy_hist, test_hist, cv2.HISTCMP_CORREL)
-    health_status = "healthy" if similarity > threshold else "wilted"
+    health_status = "not wilted" if similarity > threshold else "wilted"
     return health_status, similarity
 
 # Exemple d'utilisation
-def evaluate_flower_state(path_flower_evaluate) :
+def evaluate_flower_state1() :
     # fleurs à traiter (au début, dossier contenant une seule image)
-    dossier_images = 'C:/Users/mathi/Desktop/CPE 4-ETI/Projet Transversal/Appli WEB/image_processing'
+    dossier_images = 'image_processing'#../image_processing
     # dossier contenant les images pré-traitées
-    dossier_resultats = 'C:/Users/mathi/Desktop/CPE 4-ETI/Projet Transversal/Appli WEB/src/resultats'
+    dossier_resultats = 'src/resultats'#../src/resultats
     process_folder(dossier_images, dossier_resultats)
 
-    healthy_directory = 'C:/Users/mathi/Desktop/CPE 4-ETI/Projet Transversal/Appli WEB/src/images'
-    test_directory = "C:/Users/mathi/Desktop/CPE 4-ETI/Projet Transversal/Appli WEB/src/resultats/" + path_flower_evaluate# Image de test unique
+def evaluate_flower_state2(path_flower_evaluate) :
+    healthy_directory = 'src/images'#../src/images
+    test_directory = "src/resultats/" + path_flower_evaluate# Image de test unique  #../src/resultats/
     healthy_hist = calculate_average_histogram(healthy_directory)
-
     status, score = compare_flower_health(test_directory, healthy_hist)
     print("state: ", status)
     return(status)
@@ -221,8 +219,9 @@ try:
             try:
                 id_flower, humidity, temperature, brightness = parse_data(data)
                 show_video_capture(Link_IP)
-                path_flower_evaluate = f'flower_{id_flower}.jpg'
-                flower_state = evaluate_flower_state(path_flower_evaluate)
+                path_flower_evaluate = f'flower_{id_flower}.png'
+                evaluate_flower_state1()
+                flower_state = evaluate_flower_state2(path_flower_evaluate)
                 insert_data(id_flower, humidity, temperature, brightness, flower_state)
 
             except Exception as e:
