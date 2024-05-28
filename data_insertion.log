@@ -1727,3 +1727,28 @@ cv2.error: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc
 2024-05-21 11:22:01,331 - INFO - Inserted: Flower ID 27, Humidity 55, Temperature 20, Brightness 305, State wilted
 2024-05-21 11:23:02,212 - INFO - Program terminated by user.
 2024-05-21 11:23:02,214 - INFO - Serial connection closed.
+2024-05-28 10:28:13,096 - INFO - Connected to COM2 at 19200 baud rate.
+2024-05-28 10:28:41,298 - INFO - Program terminated by user.
+2024-05-28 10:28:41,298 - INFO - Serial connection closed.
+2024-05-28 10:28:55,092 - INFO - Connected to COM2 at 19200 baud rate.
+2024-05-28 10:28:59,481 - INFO - Raw data received: 27 H55T20L305
+2024-05-28 10:29:01,285 - INFO - Screenshot saved to image_processing\flower_27.png
+2024-05-28 10:29:04,021 - INFO - Inserted: Flower ID 27, Humidity 55, Temperature 20, Brightness 305, State wilted
+2024-05-28 10:31:19,982 - INFO - Program terminated by user.
+2024-05-28 10:31:19,986 - INFO - Serial connection closed.
+2024-05-28 11:56:24,240 - INFO - Connected to COM6 at 19200 baud rate.
+2024-05-28 12:04:20,717 - INFO - Raw data received: 0 H0T0L2166
+2024-05-28 12:04:20,717 - ERROR - Error parsing data: 0 H0T0L2166
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: 'T0'
+2024-05-28 12:04:20,717 - ERROR - Error processing data: 0 H0T0L2166
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: 'T0'
+2024-05-28 12:04:53,228 - INFO - Program terminated by user.
+2024-05-28 12:04:53,355 - INFO - Serial connection closed.

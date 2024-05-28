@@ -21,7 +21,7 @@ DB_PORT = '55432'  # Default PostgreSQL port. Change if different.
 DB_CONNECTION = f"dbname='{DB_DB}' user='{DB_USER}' password='{DB_PASSWORD}' host='{DB_HOST}' port='{DB_PORT}'"
 
 # Configuration for serial communication
-COM_PORT = 'COM2'  # Update this to your actual COM port
+COM_PORT = 'COM6'  # Update this to your actual COM port
 BAUD_RATE = 19200  # Update this to match your device's baud rate
 Link_IP = 'http://192.168.173.27:8086/' # Link for showing videostream from camera
 # Link_IP = 'http://localhost:8080/playlist.m3u8'
