@@ -1752,3 +1752,1140 @@ Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: 'T0'
 2024-05-28 12:04:53,228 - INFO - Program terminated by user.
 2024-05-28 12:04:53,355 - INFO - Serial connection closed.
+2024-05-29 08:40:10,955 - INFO - Connected to COM4 at 19200 baud rate.
+2024-05-29 08:40:12,599 - INFO - Raw data received: H33T25L272
+2024-05-29 08:40:12,599 - ERROR - Error parsing data: H33T25L272
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:40:12,600 - ERROR - Error processing data: H33T25L272
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:42:39,107 - INFO - Raw data received: H33T25L654
+2024-05-29 08:42:39,107 - ERROR - Error parsing data: H33T25L654
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:42:39,107 - ERROR - Error processing data: H33T25L654
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:52:28,689 - INFO - Raw data received: H34T24L757
+2024-05-29 08:52:28,689 - ERROR - Error parsing data: H34T24L757
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:52:28,689 - ERROR - Error processing data: H34T24L757
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:52:33,793 - INFO - Raw data received: H34T24L774
+2024-05-29 08:52:33,793 - ERROR - Error parsing data: H34T24L774
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:52:33,793 - ERROR - Error processing data: H34T24L774
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:52:38,849 - INFO - Raw data received: H34T24L771
+2024-05-29 08:52:38,849 - ERROR - Error parsing data: H34T24L771
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:52:38,849 - ERROR - Error processing data: H34T24L771
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:52:43,975 - INFO - Raw data received: H34T24L766
+2024-05-29 08:52:43,975 - ERROR - Error parsing data: H34T24L766
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:52:43,975 - ERROR - Error processing data: H34T24L766
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:52:48,960 - INFO - Raw data received: H34T24L774
+2024-05-29 08:52:48,960 - ERROR - Error parsing data: H34T24L774
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:52:48,960 - ERROR - Error processing data: H34T24L774
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:52:54,117 - INFO - Raw data received: H34T24L768
+2024-05-29 08:52:54,117 - ERROR - Error parsing data: H34T24L768
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:52:54,117 - ERROR - Error processing data: H34T24L768
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:52:59,222 - INFO - Raw data received: H34T24L768
+2024-05-29 08:52:59,222 - ERROR - Error parsing data: H34T24L768
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:52:59,222 - ERROR - Error processing data: H34T24L768
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:04,324 - INFO - Raw data received: H34T24L763
+2024-05-29 08:53:04,325 - ERROR - Error parsing data: H34T24L763
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:04,325 - ERROR - Error processing data: H34T24L763
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:09,387 - INFO - Raw data received: H34T24L768
+2024-05-29 08:53:09,387 - ERROR - Error parsing data: H34T24L768
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:09,387 - ERROR - Error processing data: H34T24L768
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:14,469 - INFO - Raw data received: H34T24L768
+2024-05-29 08:53:14,469 - ERROR - Error parsing data: H34T24L768
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:14,469 - ERROR - Error processing data: H34T24L768
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:19,556 - INFO - Raw data received: H34T24L0
+2024-05-29 08:53:19,556 - ERROR - Error parsing data: H34T24L0
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:19,556 - ERROR - Error processing data: H34T24L0
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:24,642 - INFO - Raw data received: H34T24L768
+2024-05-29 08:53:24,642 - ERROR - Error parsing data: H34T24L768
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:24,642 - ERROR - Error processing data: H34T24L768
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:29,730 - INFO - Raw data received: H34T24L763
+2024-05-29 08:53:29,730 - ERROR - Error parsing data: H34T24L763
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:29,730 - ERROR - Error processing data: H34T24L763
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:34,790 - INFO - Raw data received: H34T24L766
+2024-05-29 08:53:34,790 - ERROR - Error parsing data: H34T24L766
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:34,790 - ERROR - Error processing data: H34T24L766
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:39,838 - INFO - Raw data received: H34T24L768
+2024-05-29 08:53:39,838 - ERROR - Error parsing data: H34T24L768
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:39,838 - ERROR - Error processing data: H34T24L768
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:44,934 - INFO - Raw data received: H34T24L760
+2024-05-29 08:53:44,934 - ERROR - Error parsing data: H34T24L760
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:44,934 - ERROR - Error processing data: H34T24L760
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:50,036 - INFO - Raw data received: H34T24L766
+2024-05-29 08:53:50,036 - ERROR - Error parsing data: H34T24L766
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:50,036 - ERROR - Error processing data: H34T24L766
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:55,165 - INFO - Raw data received: H34T24L771
+2024-05-29 08:53:55,165 - ERROR - Error parsing data: H34T24L771
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:53:55,165 - ERROR - Error processing data: H34T24L771
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:00,222 - INFO - Raw data received: H34T24L771
+2024-05-29 08:54:00,222 - ERROR - Error parsing data: H34T24L771
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:00,222 - ERROR - Error processing data: H34T24L771
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:05,343 - INFO - Raw data received: H34T24L760
+2024-05-29 08:54:05,343 - ERROR - Error parsing data: H34T24L760
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:05,343 - ERROR - Error processing data: H34T24L760
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:10,457 - INFO - Raw data received: H34T24L768
+2024-05-29 08:54:10,457 - ERROR - Error parsing data: H34T24L768
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:10,457 - ERROR - Error processing data: H34T24L768
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:15,528 - INFO - Raw data received: H34T24L630
+2024-05-29 08:54:15,528 - ERROR - Error parsing data: H34T24L630
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:15,528 - ERROR - Error processing data: H34T24L630
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:20,624 - INFO - Raw data received: H34T24L510
+2024-05-29 08:54:20,624 - ERROR - Error parsing data: H34T24L510
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:20,624 - ERROR - Error processing data: H34T24L510
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:25,643 - INFO - Raw data received: H34T24L513
+2024-05-29 08:54:25,643 - ERROR - Error parsing data: H34T24L513
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:25,643 - ERROR - Error processing data: H34T24L513
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:30,737 - INFO - Raw data received: H34T24L240
+2024-05-29 08:54:30,738 - ERROR - Error parsing data: H34T24L240
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:30,738 - ERROR - Error processing data: H34T24L240
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:35,844 - INFO - Raw data received: H34T24L449
+2024-05-29 08:54:35,844 - ERROR - Error parsing data: H34T24L449
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:35,845 - ERROR - Error processing data: H34T24L449
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:40,952 - INFO - Raw data received: H34T24L411
+2024-05-29 08:54:40,952 - ERROR - Error parsing data: H34T24L411
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:40,952 - ERROR - Error processing data: H34T24L411
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:46,001 - INFO - Raw data received: H34T24L771
+2024-05-29 08:54:46,001 - ERROR - Error parsing data: H34T24L771
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:46,001 - ERROR - Error processing data: H34T24L771
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:51,083 - INFO - Raw data received: H34T24L823
+2024-05-29 08:54:51,083 - ERROR - Error parsing data: H34T24L823
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:51,084 - ERROR - Error processing data: H34T24L823
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:56,192 - INFO - Raw data received: H34T24L789
+2024-05-29 08:54:56,192 - ERROR - Error parsing data: H34T24L789
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:54:56,192 - ERROR - Error processing data: H34T24L789
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:01,245 - INFO - Raw data received: H34T24L748
+2024-05-29 08:55:01,245 - ERROR - Error parsing data: H34T24L748
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:01,245 - ERROR - Error processing data: H34T24L748
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:06,313 - INFO - Raw data received: H34T24L786
+2024-05-29 08:55:06,313 - ERROR - Error parsing data: H34T24L786
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:06,313 - ERROR - Error processing data: H34T24L786
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:11,454 - INFO - Raw data received: H34T24L789
+2024-05-29 08:55:11,454 - ERROR - Error parsing data: H34T24L789
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:11,454 - ERROR - Error processing data: H34T24L789
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:16,518 - INFO - Raw data received: H34T24L795
+2024-05-29 08:55:16,518 - ERROR - Error parsing data: H34T24L795
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:16,518 - ERROR - Error processing data: H34T24L795
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:21,634 - INFO - Raw data received: H34T24L544
+2024-05-29 08:55:21,634 - ERROR - Error parsing data: H34T24L544
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:21,634 - ERROR - Error processing data: H34T24L544
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:26,720 - INFO - Raw data received: H34T24L786
+2024-05-29 08:55:26,720 - ERROR - Error parsing data: H34T24L786
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:26,720 - ERROR - Error processing data: H34T24L786
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:31,795 - INFO - Raw data received: H34T24L780
+2024-05-29 08:55:31,795 - ERROR - Error parsing data: H34T24L780
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:31,795 - ERROR - Error processing data: H34T24L780
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:36,934 - INFO - Raw data received: H34T24L789
+2024-05-29 08:55:36,934 - ERROR - Error parsing data: H34T24L789
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:36,934 - ERROR - Error processing data: H34T24L789
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:42,030 - INFO - Raw data received: H34T24L777
+2024-05-29 08:55:42,030 - ERROR - Error parsing data: H34T24L777
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:42,030 - ERROR - Error processing data: H34T24L777
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:47,118 - INFO - Raw data received: H34T24L462
+2024-05-29 08:55:47,118 - ERROR - Error parsing data: H34T24L462
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:47,118 - ERROR - Error processing data: H34T24L462
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:52,155 - INFO - Raw data received: H34T24L569
+2024-05-29 08:55:52,156 - ERROR - Error parsing data: H34T24L569
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:52,156 - ERROR - Error processing data: H34T24L569
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:57,192 - INFO - Raw data received: H34T23L397
+2024-05-29 08:55:57,192 - ERROR - Error parsing data: H34T23L397
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:55:57,192 - ERROR - Error processing data: H34T23L397
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:56:02,299 - INFO - Raw data received: H34T23L698
+2024-05-29 08:56:02,299 - ERROR - Error parsing data: H34T23L698
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:56:02,299 - ERROR - Error processing data: H34T23L698
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:56:07,411 - INFO - Raw data received: H34T24L250
+2024-05-29 08:56:07,411 - ERROR - Error parsing data: H34T24L250
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:56:07,411 - ERROR - Error processing data: H34T24L250
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:56:12,448 - INFO - Raw data received: H34T24L465
+2024-05-29 08:56:12,448 - ERROR - Error parsing data: H34T24L465
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:56:12,449 - ERROR - Error processing data: H34T24L465
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:56:17,582 - INFO - Raw data received: H34T24L707
+2024-05-29 08:56:17,582 - ERROR - Error parsing data: H34T24L707
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:56:17,582 - ERROR - Error processing data: H34T24L707
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:56:49,079 - INFO - Raw data received: H34T23L719
+2024-05-29 08:56:49,079 - ERROR - Error parsing data: H34T23L719
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:56:49,079 - ERROR - Error processing data: H34T23L719
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:56:54,098 - INFO - Raw data received: H34T23L742
+2024-05-29 08:56:54,098 - ERROR - Error parsing data: H34T23L742
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:56:54,098 - ERROR - Error processing data: H34T23L742
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:56:59,201 - INFO - Raw data received: H34T23L739
+2024-05-29 08:56:59,201 - ERROR - Error parsing data: H34T23L739
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 08:56:59,201 - ERROR - Error processing data: H34T23L739
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'H3'
+2024-05-29 09:56:09,750 - INFO - Raw data received: 39 H0T0L569
+2024-05-29 09:56:09,750 - ERROR - Error parsing data: 39 H0T0L569
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 09:56:09,750 - ERROR - Error processing data: 39 H0T0L569
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 09:56:21,678 - INFO - Raw data received: 39 H0T0L559
+2024-05-29 09:56:21,679 - ERROR - Error parsing data: 39 H0T0L559
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 09:56:21,679 - ERROR - Error processing data: 39 H0T0L559
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 09:56:49,807 - INFO - Raw data received: 39 H0T0L559
+2024-05-29 09:56:49,807 - ERROR - Error parsing data: 39 H0T0L559
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 09:56:49,807 - ERROR - Error processing data: 39 H0T0L559
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 09:56:59,018 - INFO - Raw data received: 19 H0T0L581
+2024-05-29 09:56:59,018 - ERROR - Error parsing data: 19 H0T0L581
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 09:56:59,018 - ERROR - Error processing data: 19 H0T0L581
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 09:58:37,188 - INFO - Raw data received: 19 H0T0L532
+2024-05-29 09:58:37,188 - ERROR - Error parsing data: 19 H0T0L532
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 09:58:37,188 - ERROR - Error processing data: 19 H0T0L532
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 09:59:03,623 - INFO - Raw data received: 27 H0T0L569
+2024-05-29 09:59:03,623 - ERROR - Error parsing data: 27 H0T0L569
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 09:59:03,623 - ERROR - Error processing data: 27 H0T0L569
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 09:59:59,040 - INFO - Raw data received: 10 H0T0L593
+2024-05-29 09:59:59,040 - ERROR - Error parsing data: 10 H0T0L593
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 09:59:59,040 - ERROR - Error processing data: 10 H0T0L593
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 10:00:42,487 - INFO - Raw data received: 10 H0T0L757
+2024-05-29 10:00:42,488 - ERROR - Error parsing data: 10 H0T0L757
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 10:00:42,488 - ERROR - Error processing data: 10 H0T0L757
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 10:02:33,166 - INFO - Raw data received: 10 H0T0L760
+2024-05-29 10:02:33,166 - ERROR - Error parsing data: 10 H0T0L760
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 10:02:33,166 - ERROR - Error processing data: 10 H0T0L760
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 10:06:48,166 - INFO - Raw data received: 19 H0T0L611
+2024-05-29 10:06:48,166 - ERROR - Error parsing data: 19 H0T0L611
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 10:06:48,166 - ERROR - Error processing data: 19 H0T0L611
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 10:13:59,224 - INFO - Raw data received: EERROR
+2024-05-29 10:13:59,224 - ERROR - Error parsing data: EERROR
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'EE'
+2024-05-29 10:13:59,224 - ERROR - Error processing data: EERROR
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'EE'
+2024-05-29 10:18:15,073 - INFO - Raw data received: EERROR
+2024-05-29 10:18:15,073 - ERROR - Error parsing data: EERROR
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'EE'
+2024-05-29 10:18:15,073 - ERROR - Error processing data: EERROR
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'EE'
+2024-05-29 10:20:58,463 - INFO - Raw data received: EERROR
+2024-05-29 10:20:58,463 - ERROR - Error parsing data: EERROR
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'EE'
+2024-05-29 10:20:58,464 - ERROR - Error processing data: EERROR
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'EE'
+2024-05-29 10:22:43,103 - INFO - Raw data received: EERROR
+2024-05-29 10:22:43,103 - ERROR - Error parsing data: EERROR
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'EE'
+2024-05-29 10:22:43,103 - ERROR - Error processing data: EERROR
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'EE'
+2024-05-29 10:25:08,525 - INFO - Raw data received: 39 H0T0L1383
+2024-05-29 10:25:08,525 - ERROR - Error parsing data: 39 H0T0L1383
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 10:25:08,525 - ERROR - Error processing data: 39 H0T0L1383
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 10:25:23,524 - INFO - Raw data received: 39 H0T0L1388
+2024-05-29 10:25:23,524 - ERROR - Error parsing data: 39 H0T0L1388
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 10:25:23,524 - ERROR - Error processing data: 39 H0T0L1388
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 10:28:36,166 - INFO - Raw data received: 27 H0T0L1349
+2024-05-29 10:28:36,166 - ERROR - Error parsing data: 27 H0T0L1349
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 10:28:36,166 - ERROR - Error processing data: 27 H0T0L1349
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 10:30:35,344 - INFO - Raw data received: 39 H0T0L959
+2024-05-29 10:30:35,344 - ERROR - Error parsing data: 39 H0T0L959
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 10:30:35,344 - ERROR - Error processing data: 39 H0T0L959
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 10:33:57,612 - INFO - Raw data received: EERROR
+2024-05-29 10:33:57,612 - ERROR - Error parsing data: EERROR
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'EE'
+2024-05-29 10:33:57,612 - ERROR - Error processing data: EERROR
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'EE'
+2024-05-29 10:37:23,076 - INFO - Raw data received: 19 H0T0L858
+2024-05-29 10:37:23,076 - ERROR - Error parsing data: 19 H0T0L858
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 10:37:23,076 - ERROR - Error processing data: 19 H0T0L858
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 33, in parse_data
+    humidity = int(data[4:6])
+ValueError: invalid literal for int() with base 10: '0T'
+2024-05-29 10:38:02,540 - INFO - Raw data received: 39 H34T24L820
+2024-05-29 10:38:08,195 - INFO - Cannot open the stream.
+2024-05-29 10:38:10,919 - ERROR - Error processing data: 39 H34T24L820
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 224, in <module>
+    flower_state = evaluate_flower_state2(path_flower_evaluate)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 205, in evaluate_flower_state2
+    status, score = compare_flower_health(test_directory, healthy_hist)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 187, in compare_flower_health
+    test_img = load_image_as_grayscale(test_image_path)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 164, in load_image_as_grayscale
+    grayscale_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+2024-05-29 10:39:36,791 - INFO - Raw data received: 19 H34T24L860
+2024-05-29 10:39:38,086 - INFO - Screenshot saved to image_processing\flower_19.png
+2024-05-29 10:39:41,343 - INFO - Inserted: Flower ID 19, Humidity 34, Temperature 24, Brightness 860, State wilted
+2024-05-29 10:41:18,995 - INFO - Raw data received: 10 H32T28L829
+2024-05-29 10:41:24,578 - INFO - Cannot open the stream.
+2024-05-29 10:41:27,112 - ERROR - Error processing data: 10 H32T28L829
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 224, in <module>
+    flower_state = evaluate_flower_state2(path_flower_evaluate)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 205, in evaluate_flower_state2
+    status, score = compare_flower_health(test_directory, healthy_hist)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 187, in compare_flower_health
+    test_img = load_image_as_grayscale(test_image_path)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 164, in load_image_as_grayscale
+    grayscale_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+2024-05-29 10:43:13,538 - INFO - Raw data received: 50 H32T27L809
+2024-05-29 10:43:14,771 - INFO - Screenshot saved to image_processing\flower_50.png
+2024-05-29 10:43:17,552 - INFO - Inserted: Flower ID 50, Humidity 32, Temperature 27, Brightness 809, State wilted
+2024-05-29 10:44:55,158 - INFO - Raw data received: 50 H33T26L815
+2024-05-29 10:44:57,690 - INFO - Screenshot saved to image_processing\flower_50.png
+2024-05-29 10:45:00,920 - INFO - Inserted: Flower ID 50, Humidity 33, Temperature 26, Brightness 815, State wilted
+2024-05-29 10:45:55,078 - INFO - Raw data received: 50 H33T26L826
+2024-05-29 10:45:56,599 - INFO - Screenshot saved to image_processing\flower_50.png
+2024-05-29 10:45:59,396 - INFO - Inserted: Flower ID 50, Humidity 33, Temperature 26, Brightness 826, State wilted
+2024-05-29 10:46:26,574 - INFO - Raw data received: 10 H33T25L846
+2024-05-29 10:46:28,407 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-05-29 10:46:31,467 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 25, Brightness 846, State wilted
+2024-05-29 10:46:41,596 - INFO - Raw data received: 39 H33T25L0
+2024-05-29 10:46:42,798 - INFO - Screenshot saved to image_processing\flower_39.png
+2024-05-29 10:46:45,768 - INFO - Inserted: Flower ID 39, Humidity 33, Temperature 25, Brightness 0, State wilted
+2024-05-29 10:47:23,171 - INFO - Raw data received: 10 H33T25L886
+2024-05-29 10:47:25,316 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-05-29 10:47:28,215 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 25, Brightness 886, State wilted
+2024-05-29 10:48:24,479 - INFO - Raw data received: 10 H33T25L0
+2024-05-29 10:48:25,692 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-05-29 10:48:28,606 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 25, Brightness 0, State wilted
+2024-05-29 10:49:01,618 - INFO - Raw data received: 39 H33T25L875
+2024-05-29 10:49:02,985 - INFO - Screenshot saved to image_processing\flower_39.png
+2024-05-29 10:49:05,925 - INFO - Inserted: Flower ID 39, Humidity 33, Temperature 25, Brightness 875, State wilted
+2024-05-29 10:49:25,959 - INFO - Raw data received: 10 H33T25L849
+2024-05-29 10:49:27,110 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-05-29 10:49:30,385 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 25, Brightness 849, State wilted
+2024-05-29 10:50:18,392 - INFO - Program terminated by user.
+2024-05-29 10:50:18,533 - INFO - Serial connection closed.
+2024-05-29 10:50:21,219 - INFO - Connected to COM4 at 19200 baud rate.
+2024-05-29 10:50:35,705 - INFO - Raw data received: 10 H33T25L875
+2024-05-29 10:50:36,785 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-05-29 10:50:40,439 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 25, Brightness 875, State wilted
+2024-05-29 10:52:44,154 - INFO - Raw data received: 10 H33T25L849
+2024-05-29 10:52:45,284 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-05-29 10:52:49,571 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 25, Brightness 849, State wilted
+2024-05-29 10:54:03,349 - INFO - Raw data received: 10 H33T25L550
+2024-05-29 10:54:04,471 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-05-29 10:54:08,585 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 25, Brightness 550, State wilted
+2024-05-29 10:55:06,462 - INFO - Raw data received: 27 H33T25L465
+2024-05-29 10:55:07,614 - INFO - Screenshot saved to image_processing\flower_27.png
+2024-05-29 10:55:12,330 - ERROR - Error processing data: 27 H33T25L465
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 296, in <module>
+    flower_state = evaluate_flower_state2(path_flower_evaluate)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 277, in evaluate_flower_state2
+    status, score = compare_flower_health(test_directory, healthy_hist)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 259, in compare_flower_health
+    test_img = load_image_as_grayscale(test_image_path)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 236, in load_image_as_grayscale
+    grayscale_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+2024-05-29 10:55:12,900 - INFO - Program terminated by user.
+2024-05-29 10:55:13,034 - INFO - Serial connection closed.
+2024-05-29 10:55:16,022 - INFO - Connected to COM4 at 19200 baud rate.
+2024-05-29 10:55:33,688 - INFO - Raw data received: 10 H33T25L465
+2024-05-29 10:55:34,856 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-05-29 10:55:39,184 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 25, Brightness 465, State wilted
+2024-05-29 10:56:17,611 - INFO - Raw data received: 10 H33T25L491
+2024-05-29 10:56:18,718 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-05-29 10:56:23,568 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 25, Brightness 491, State wilted
+2024-05-29 10:57:23,464 - INFO - Program terminated by user.
+2024-05-29 10:57:23,578 - INFO - Serial connection closed.
+2024-05-29 11:15:06,805 - INFO - Connected to COM4 at 19200 baud rate.
+2024-05-29 11:22:36,541 - INFO - Raw data received: 10 H33T26L572
+2024-05-29 11:22:37,947 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-05-29 11:22:42,900 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 26, Brightness 572, State wilted
+2024-05-29 11:22:49,926 - INFO - Raw data received: 27 H33T26L605
+2024-05-29 11:22:51,185 - INFO - Screenshot saved to image_processing\flower_27.png
+2024-05-29 11:22:56,613 - INFO - Inserted: Flower ID 27, Humidity 33, Temperature 26, Brightness 605, State wilted
+2024-05-29 11:27:04,079 - INFO - Raw data received: 27 H33T26L1463
+2024-05-29 11:27:05,358 - INFO - Screenshot saved to image_processing\flower_27.png
+2024-05-29 11:27:10,208 - INFO - Inserted: Flower ID 27, Humidity 33, Temperature 26, Brightness 1463, State wilted
+2024-05-29 11:27:51,961 - INFO - Raw data received: 19 H34T26L1476
+2024-05-29 11:27:53,333 - INFO - Screenshot saved to image_processing\flower_19.png
+2024-05-29 11:27:58,361 - INFO - Inserted: Flower ID 19, Humidity 34, Temperature 26, Brightness 1476, State wilted
+2024-05-29 11:29:28,743 - INFO - Raw data received: 27 H33T25L1474
+2024-05-29 11:29:30,015 - INFO - Screenshot saved to image_processing\flower_27.png
+2024-05-29 11:29:35,178 - INFO - Inserted: Flower ID 27, Humidity 33, Temperature 25, Brightness 1474, State wilted
+2024-05-29 11:29:46,628 - INFO - Raw data received: 10 H33T26L1185
+2024-05-29 11:29:48,015 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-05-29 11:29:53,445 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 26, Brightness 1185, State wilted
+2024-05-29 11:30:08,192 - INFO - Raw data received: 19 H33T25L1458
+2024-05-29 11:30:09,485 - INFO - Screenshot saved to image_processing\flower_19.png
+2024-05-29 11:30:14,782 - INFO - Inserted: Flower ID 19, Humidity 33, Temperature 25, Brightness 1458, State wilted
+2024-05-29 11:31:22,373 - INFO - Program terminated by user.
+2024-05-29 11:31:22,498 - INFO - Serial connection closed.
+2024-05-29 11:31:27,961 - INFO - Connected to COM4 at 19200 baud rate.
+2024-05-29 11:33:18,787 - INFO - Raw data received: 39 H33T26L880
+2024-05-29 11:33:24,290 - INFO - Cannot open the stream.
+2024-05-29 11:33:29,619 - ERROR - Error processing data: 39 H33T26L880
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 224, in <module>
+    flower_state = evaluate_flower_state2(path_flower_evaluate)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 205, in evaluate_flower_state2
+    status, score = compare_flower_health(test_directory, healthy_hist)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 187, in compare_flower_health
+    test_img = load_image_as_grayscale(test_image_path)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 164, in load_image_as_grayscale
+    grayscale_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+2024-05-29 11:35:33,087 - INFO - Program terminated by user.
+2024-05-29 11:35:33,197 - INFO - Serial connection closed.
+2024-05-29 11:35:35,325 - INFO - Connected to COM4 at 19200 baud rate.
+2024-05-29 11:35:36,454 - INFO - Raw data received: 27 H33T26L1228
+2024-05-29 11:35:38,264 - INFO - Screenshot saved to image_processing\flower_27.png
+2024-05-29 11:35:43,626 - INFO - Inserted: Flower ID 27, Humidity 33, Temperature 26, Brightness 1228, State wilted
+2024-05-29 11:36:03,398 - INFO - Raw data received: 19 H33T26L1357
+2024-05-29 11:36:05,205 - INFO - Screenshot saved to image_processing\flower_19.png
+2024-05-29 11:36:11,468 - INFO - Inserted: Flower ID 19, Humidity 33, Temperature 26, Brightness 1357, State wilted
+2024-05-29 11:38:51,398 - INFO - Raw data received: 19 H33T25L1326
+2024-05-29 11:38:53,322 - INFO - Screenshot saved to image_processing\flower_19.png
+2024-05-29 11:38:58,544 - INFO - Inserted: Flower ID 19, Humidity 33, Temperature 25, Brightness 1326, State wilted
+2024-05-29 11:40:22,469 - INFO - Raw data received: 10 H33T25L1326
+2024-05-29 11:40:24,297 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-05-29 11:40:29,436 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 25, Brightness 1326, State wilted
+2024-05-29 11:40:30,554 - INFO - Raw data received: 10 H33T25L1321
+2024-05-29 11:40:32,592 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-05-29 11:40:38,162 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 25, Brightness 1321, State wilted
+2024-05-29 11:40:58,495 - INFO - Raw data received: 19 H33T25L1368
+2024-05-29 11:41:04,057 - INFO - Cannot open the stream.
+2024-05-29 11:41:09,008 - INFO - Inserted: Flower ID 19, Humidity 33, Temperature 25, Brightness 1368, State wilted
+2024-05-29 11:43:19,779 - INFO - Raw data received: 27 H33T26L449
+2024-05-29 11:43:25,355 - INFO - Cannot open the stream.
+2024-05-29 11:43:30,188 - ERROR - Error processing data: 27 H33T26L449
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 224, in <module>
+    flower_state = evaluate_flower_state2(path_flower_evaluate)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 205, in evaluate_flower_state2
+    status, score = compare_flower_health(test_directory, healthy_hist)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 187, in compare_flower_health
+    test_img = load_image_as_grayscale(test_image_path)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 164, in load_image_as_grayscale
+    grayscale_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'
+
+2024-05-29 11:49:13,175 - INFO - Program terminated by user.
+2024-05-29 11:49:13,282 - INFO - Serial connection closed.
+2024-05-29 11:49:15,473 - INFO - Connected to COM4 at 19200 baud rate.
+2024-05-29 11:53:51,224 - INFO - Raw data received: 19 H33T26L1381
+2024-05-29 11:53:55,651 - INFO - Screenshot saved to image_processing\flower_19.png
+2024-05-29 11:54:00,924 - INFO - Inserted: Flower ID 19, Humidity 33, Temperature 26, Brightness 1381, State wilted
+2024-05-29 11:54:58,612 - INFO - Raw data received: 27 H33T25L1302
+2024-05-29 11:54:59,881 - INFO - Screenshot saved to image_processing\flower_27.png
+2024-05-29 11:55:05,026 - INFO - Inserted: Flower ID 27, Humidity 33, Temperature 25, Brightness 1302, State wilted
+2024-05-29 11:55:06,134 - INFO - Raw data received: 27 H33T25L1263
+2024-05-29 11:55:07,368 - INFO - Screenshot saved to image_processing\flower_27.png
+2024-05-29 11:55:12,320 - INFO - Inserted: Flower ID 27, Humidity 33, Temperature 25, Brightness 1263, State wilted
+2024-05-29 11:55:15,657 - INFO - Raw data received: 10 H33T25L1265
+2024-05-29 11:55:17,210 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-05-29 11:55:23,240 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 25, Brightness 1265, State wilted
+2024-05-29 11:55:35,131 - INFO - Raw data received: 19 H33T25L1344
+2024-05-29 11:55:36,331 - INFO - Screenshot saved to image_processing\flower_19.png
+2024-05-29 11:55:41,478 - INFO - Inserted: Flower ID 19, Humidity 33, Temperature 25, Brightness 1344, State wilted
+2024-05-29 12:00:58,607 - INFO - Raw data received: 27 H33T26L1315
+2024-05-29 12:01:00,002 - INFO - Screenshot saved to image_processing\flower_27.png
+2024-05-29 12:01:06,240 - INFO - Inserted: Flower ID 27, Humidity 33, Temperature 26, Brightness 1315, State wilted
+2024-05-29 12:01:07,351 - INFO - Raw data received: 10 H33T26L1276
+2024-05-29 12:01:08,588 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-05-29 12:01:14,715 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 26, Brightness 1276, State wilted
+2024-05-29 12:01:22,387 - INFO - Raw data received: 19 H33T26L1430
+2024-05-29 12:01:23,594 - INFO - Screenshot saved to image_processing\flower_19.png
+2024-05-29 12:01:30,356 - INFO - Inserted: Flower ID 19, Humidity 33, Temperature 26, Brightness 1430, State wilted
+2024-05-29 12:03:09,371 - INFO - Raw data received: 19 H33T26L1399
+2024-05-29 12:03:10,641 - INFO - Screenshot saved to image_processing\flower_19.png
+2024-05-29 12:03:16,321 - INFO - Inserted: Flower ID 19, Humidity 33, Temperature 26, Brightness 1399, State wilted
+2024-05-29 12:07:45,523 - INFO - Program terminated by user.
+2024-05-29 12:07:45,648 - INFO - Serial connection closed.
+2024-05-29 12:09:25,018 - INFO - Connected to COM4 at 19200 baud rate.
+2024-05-29 12:10:56,058 - INFO - Raw data received: 27 H33T26L1334
+2024-05-29 12:10:57,285 - INFO - Screenshot saved to image_processing\flower_27.png
+2024-05-29 12:11:03,336 - INFO - Inserted: Flower ID 27, Humidity 33, Temperature 26, Brightness 1334, State wilted
+2024-05-29 12:11:05,623 - INFO - Raw data received: 10 H33T26L1360
+2024-05-29 12:11:06,909 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-05-29 12:11:12,624 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 26, Brightness 1360, State wilted
+2024-05-29 12:11:19,300 - INFO - Raw data received: 19 H33T26L1404
+2024-05-29 12:11:20,530 - INFO - Screenshot saved to image_processing\flower_19.png
+2024-05-29 12:11:26,480 - INFO - Inserted: Flower ID 19, Humidity 33, Temperature 26, Brightness 1404, State wilted
+2024-05-29 12:17:56,229 - ERROR - Error opening the serial port: ClearCommError failed (PermissionError(13, 'Accès refusé.', None, 5))
+2024-05-29 12:17:56,229 - INFO - Serial connection closed.
