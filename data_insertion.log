@@ -2889,3 +2889,121 @@ cv2.error: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc
 2024-05-29 12:11:26,480 - INFO - Inserted: Flower ID 19, Humidity 33, Temperature 26, Brightness 1404, State wilted
 2024-05-29 12:17:56,229 - ERROR - Error opening the serial port: ClearCommError failed (PermissionError(13, 'Accès refusé.', None, 5))
 2024-05-29 12:17:56,229 - INFO - Serial connection closed.
+2024-06-05 08:46:41,516 - INFO - Connected to COM4 at 19200 baud rate.
+2024-06-05 08:51:54,555 - INFO - Program terminated by user.
+2024-06-05 08:51:54,675 - INFO - Serial connection closed.
+2024-06-05 08:58:24,929 - INFO - Connected to COM4 at 19200 baud rate.
+2024-06-05 08:58:26,162 - INFO - Raw data received: 19 H33T26L1344
+2024-06-05 08:58:27,600 - INFO - Screenshot saved to image_processing\flower_19.png
+2024-06-05 08:58:31,439 - INFO - Inserted: Flower ID 19, Humidity 33, Temperature 26, Brightness 1344, State wilted
+2024-06-05 08:59:26,078 - INFO - Raw data received: 50 H33T26L1499
+2024-06-05 08:59:27,290 - INFO - Screenshot saved to image_processing\flower_50.png
+2024-06-05 08:59:31,085 - INFO - Inserted: Flower ID 50, Humidity 33, Temperature 26, Brightness 1499, State wilted
+2024-06-05 08:59:50,991 - INFO - Raw data received: 10 H33T26L803
+2024-06-05 08:59:52,153 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-06-05 08:59:55,679 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 26, Brightness 803, State wilted
+2024-06-05 09:00:00,486 - INFO - Raw data received: 10 H33T26L725
+2024-06-05 09:00:01,694 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-06-05 09:00:05,279 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 26, Brightness 725, State wilted
+2024-06-05 09:04:43,949 - INFO - Raw data received: 39 H31T32L1647
+2024-06-05 09:04:45,163 - INFO - Screenshot saved to image_processing\flower_39.png
+2024-06-05 09:04:49,467 - INFO - Inserted: Flower ID 39, Humidity 31, Temperature 32, Brightness 1647, State wilted
+2024-06-05 09:14:49,539 - INFO - Raw data received: 50 H33T26L1323
+2024-06-05 09:14:50,795 - INFO - Screenshot saved to image_processing\flower_50.png
+2024-06-05 09:14:54,751 - INFO - Inserted: Flower ID 50, Humidity 33, Temperature 26, Brightness 1323, State wilted
+2024-06-05 09:16:32,848 - INFO - Raw data received: 50 H33T26L1142
+2024-06-05 09:16:34,085 - INFO - Screenshot saved to image_processing\flower_50.png
+2024-06-05 09:16:39,644 - INFO - Inserted: Flower ID 50, Humidity 33, Temperature 26, Brightness 1142, State wilted
+2024-06-05 09:16:54,892 - INFO - Raw data received: 50 H33T26L1072
+2024-06-05 09:17:00,422 - INFO - Cannot open the stream.
+2024-06-05 09:17:05,737 - INFO - Inserted: Flower ID 50, Humidity 33, Temperature 26, Brightness 1072, State wilted
+2024-06-05 09:17:06,852 - INFO - Raw data received: 50 H33T26L1058
+2024-06-05 09:17:12,407 - INFO - Cannot open the stream.
+2024-06-05 09:17:17,955 - INFO - Inserted: Flower ID 50, Humidity 33, Temperature 26, Brightness 1058, State wilted
+2024-06-05 09:17:25,259 - INFO - Raw data received: 50 H33T26L1260
+2024-06-05 09:17:30,761 - INFO - Cannot open the stream.
+2024-06-05 09:17:36,478 - INFO - Inserted: Flower ID 50, Humidity 33, Temperature 26, Brightness 1260, State wilted
+2024-06-05 09:17:37,582 - INFO - Raw data received: 50 H33T25L1381
+2024-06-05 09:17:43,144 - INFO - Cannot open the stream.
+2024-06-05 09:17:48,496 - INFO - Inserted: Flower ID 50, Humidity 33, Temperature 25, Brightness 1381, State wilted
+2024-06-05 09:19:30,738 - INFO - Raw data received: 50 H33T25L906
+2024-06-05 09:19:33,541 - INFO - Screenshot saved to image_processing\flower_50.png
+2024-06-05 09:19:39,326 - INFO - Inserted: Flower ID 50, Humidity 33, Temperature 25, Brightness 906, State wilted
+2024-06-05 09:19:58,546 - INFO - Program terminated by user.
+2024-06-05 09:19:58,661 - INFO - Serial connection closed.
+2024-06-05 09:20:01,618 - INFO - Connected to COM4 at 19200 baud rate.
+2024-06-05 09:22:16,145 - INFO - Raw data received: 10 H33T25L1386
+2024-06-05 09:22:17,490 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-06-05 09:22:23,161 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 25, Brightness 1386, State wilted
+2024-06-05 09:22:24,276 - INFO - Raw data received: 50 H33T25L1334
+2024-06-05 09:22:25,734 - INFO - Screenshot saved to image_processing\flower_50.png
+2024-06-05 09:22:31,658 - INFO - Inserted: Flower ID 50, Humidity 33, Temperature 25, Brightness 1334, State wilted
+2024-06-05 09:22:40,609 - INFO - Raw data received: 19 H33T25L1209
+2024-06-05 09:22:41,876 - INFO - Screenshot saved to image_processing\flower_19.png
+2024-06-05 09:22:47,258 - INFO - Inserted: Flower ID 19, Humidity 33, Temperature 25, Brightness 1209, State wilted
+2024-06-05 09:22:58,667 - INFO - Raw data received: 27 H33T25L1276
+2024-06-05 09:23:00,413 - INFO - Screenshot saved to image_processing\flower_27.png
+2024-06-05 09:23:05,620 - INFO - Inserted: Flower ID 27, Humidity 33, Temperature 25, Brightness 1276, State wilted
+2024-06-05 09:29:46,122 - INFO - Raw data received: 10 H33T25L754
+2024-06-05 09:29:47,563 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-06-05 09:29:52,945 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 25, Brightness 754, State wilted
+2024-06-05 09:34:21,923 - INFO - Raw data received: 50 H33T26L556
+2024-06-05 09:34:23,346 - INFO - Screenshot saved to image_processing\flower_50.png
+2024-06-05 09:34:29,804 - INFO - Inserted: Flower ID 50, Humidity 33, Temperature 26, Brightness 556, State wilted
+2024-06-05 09:34:30,923 - INFO - Raw data received: 10 H33T26L633
+2024-06-05 09:34:32,413 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-06-05 09:34:38,015 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 26, Brightness 633, State wilted
+2024-06-05 09:34:39,121 - INFO - Raw data received: 10 H33T26L627
+2024-06-05 09:34:40,543 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-06-05 09:34:47,304 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 26, Brightness 627, State wilted
+2024-06-05 09:36:54,045 - INFO - Raw data received: 27 H33T26L327
+2024-06-05 09:36:55,453 - INFO - Screenshot saved to image_processing\flower_27.png
+2024-06-05 09:37:01,233 - INFO - Inserted: Flower ID 27, Humidity 33, Temperature 26, Brightness 327, State wilted
+2024-06-05 09:37:47,864 - INFO - Raw data received: 10 H33T26L1061
+2024-06-05 09:37:49,191 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-06-05 09:37:54,600 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 26, Brightness 1061, State wilted
+2024-06-05 09:38:36,267 - INFO - Raw data received: 10 H33T26L1391
+2024-06-05 09:38:37,557 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-06-05 09:38:42,906 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 26, Brightness 1391, State wilted
+2024-06-05 09:38:46,065 - INFO - Raw data received: 19 H33T26L1228
+2024-06-05 09:38:51,540 - INFO - Cannot open the stream.
+2024-06-05 09:38:56,903 - INFO - Inserted: Flower ID 19, Humidity 33, Temperature 26, Brightness 1228, State wilted
+2024-06-05 09:39:24,589 - INFO - Raw data received: 27 H32T27L8
+2024-06-05 09:39:30,553 - INFO - Screenshot saved to image_processing\flower_27.png
+2024-06-05 09:39:36,255 - INFO - Inserted: Flower ID 27, Humidity 32, Temperature 27, Brightness 8, State wilted
+2024-06-05 09:41:01,562 - INFO - Raw data received: 10 H35T30L525
+2024-06-05 09:41:03,414 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-06-05 09:41:08,882 - INFO - Inserted: Flower ID 10, Humidity 35, Temperature 30, Brightness 525, State wilted
+2024-06-05 09:42:47,610 - INFO - Raw data received: 10 H32T29L535
+2024-06-05 09:42:49,052 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-06-05 09:42:54,375 - INFO - Inserted: Flower ID 10, Humidity 32, Temperature 29, Brightness 535, State wilted
+2024-06-05 09:45:08,909 - INFO - Raw data received: 10 H34T30L2564
+2024-06-05 09:45:10,678 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-06-05 09:45:16,359 - INFO - Inserted: Flower ID 10, Humidity 34, Temperature 30, Brightness 2564, State wilted
+2024-06-05 09:45:36,924 - INFO - Raw data received: 10 H35T31L1167
+2024-06-05 09:45:38,690 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-06-05 09:45:44,655 - INFO - Inserted: Flower ID 10, Humidity 35, Temperature 31, Brightness 1167, State wilted
+2024-06-05 09:46:11,554 - INFO - Raw data received: 10 H33T30L1233
+2024-06-05 09:46:17,727 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-06-05 09:46:22,958 - INFO - Inserted: Flower ID 10, Humidity 33, Temperature 30, Brightness 1233, State wilted
+2024-06-05 09:46:24,082 - INFO - Raw data received: EERROR
+2024-06-05 09:46:24,082 - ERROR - Error parsing data: EERROR
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'EE'
+2024-06-05 09:46:24,098 - ERROR - Error processing data: EERROR
+Traceback (most recent call last):
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 220, in <module>
+    id_flower, humidity, temperature, brightness = parse_data(data)
+  File "c:\Users\mathi\Desktop\CPE 4-ETI\Projet Transversal\Appli WEB\src\python\script.py", line 32, in parse_data
+    id_flower = int(data[:2])
+ValueError: invalid literal for int() with base 10: 'EE'
+2024-06-05 09:46:36,749 - INFO - Raw data received: 10 H31T29L1265
+2024-06-05 09:46:39,330 - INFO - Screenshot saved to image_processing\flower_10.png
+2024-06-05 09:46:44,508 - INFO - Inserted: Flower ID 10, Humidity 31, Temperature 29, Brightness 1265, State wilted
+2024-06-05 09:46:45,628 - INFO - Raw data received: 19 H32T29L1228
+2024-06-05 09:46:47,852 - INFO - Screenshot saved to image_processing\flower_19.png
+2024-06-05 09:46:53,361 - INFO - Inserted: Flower ID 19, Humidity 32, Temperature 29, Brightness 1228, State wilted
+2024-06-05 09:50:54,561 - ERROR - Error opening the serial port: ClearCommError failed (PermissionError(13, 'Accès refusé.', None, 5))
+2024-06-05 09:50:54,561 - INFO - Serial connection closed.
